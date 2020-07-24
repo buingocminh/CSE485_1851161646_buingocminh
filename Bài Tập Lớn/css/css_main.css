@@ -1,0 +1,158 @@
+body, html, div, img, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, blockquote, fieldset, legend, label, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	outline: none !important;
+}
+
+img, object, embed {
+	border: 0 none;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	height: auto;
+}
+body {
+	font-family: Helvetica, 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 15px;
+	color: #666;
+	line-height: 1.5em;
+	background-color: #fff 
+}
+header { background:url(/image/header.jpg) top center no-repeat; height:102px;}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+/*  main conten  */
+/* .primary {
+	float: left;
+	width: 71.17543859%;
+} */
+/* .secondary {
+	float: right;
+	width: 27.19298245%;
+	position: relative;
+} */
+.container{
+ margin-top: 20px;
+}
+.secondary aside { margin-bottom:20px;}
+.block { margin-bottom:20px;}
+.widget-title {
+	border-bottom: 2px solid #145f98;
+	font-size: 16px;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+	background: #145f98 url(/image/border-header.png) repeat scroll 0 0;
+	line-height: 1em;
+	margin-bottom: 20px;
+	text-align: left;
+	position: relative;
+}
+.widget-title span {
+	background-color: #145f98;
+	color: #fff;
+	padding: 8px 20px;
+	display: inline-block;
+	color: #fff;
+	display: inline-block;	
+	text-transform: uppercase; font-weight:500
+}
+#intro { margin-bottom:20px;}
+#intro .info-text {
+	float: left;
+	width: 48.70129870%;text-align:justify
+}
+#intro .info-text strong { color:#145f98; text-transform:uppercase}
+#intro .info-video {
+	float: right;
+	width: 48.70129870%;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* .list-service { margin:0 -1.5%; overflow:hidden}
+.list-service .item  { float:left; margin:0 1.5% 3% 1.5%; width:30.333%; position:relative}
+.item .script { position: absolute; bottom:0px; left:0; right:0; background-color:rgba(0,0,0,0.5); padding:5px;  color:#fff; text-transform:uppercase; text-align:center; font-size:13px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
+}
+
+#slider-service .owl-dots { display:none}
+#slider-service .owl-nav { top:-34px; right:0; left:inherit; width:75px; padding:0}
+#slider-service  .owl-prev,#slider-service .owl-next { width:25px; height:25px; overflow:hidden; text-indent:-999px; border-radius:2px; z-index:99}
+#slider-service .owl-prev { float:left; background: rgba(0,0,0,0.7) url(../images/pre.png) center no-repeat;background-size:5px 11px;}
+#slider-service .owl-next { float:right;background:rgba(0,0,0,0.7)url(../images/next.png) center no-repeat;background-size:5px 11px;} */
+/* get box */
+#getbox {
+	background-color: #145f98;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 15px;
+	color: #fff
+}
+#getbox h2 {
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase; font-weight:500; margin-bottom:15px
+}
+#getbox h2 i {
+	color: #fff;
+	font-size: 25px;
+	margin-right: 10px
+}
+#getbox p {
+	margin-bottom: 10px;
+}
+#getbox .rows {
+	background-color: #fff;
+	padding: 2% 4%; position:relative
+}
+#getbox input[type="email"], #getbox input[type="text"] {
+	width: 100%;
+	font-size: 12px;
+	border: none;
+	background-color: transparent;
+}
+#getbox select,#getbox textarea {
+	width: 100%;
+	font-size: 12px;
+	border: none;
+	background-color: transparent;
+}
+#getbox .rows i {
+	color:#999; position:absolute; right:10px; top:10px
+}
+#getbox a {
+	color: #f4f708
+}
+#getbox input[type="button"] {
+	padding: 5px 0;
+	text-align: center; background-color:#464646;
+	text-transform: uppercase;
+	border: 1px dashed #FFF;
+	color: #fff;
+	width: 100%; line-height:28px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+#getbox input[type="button"]:hover {	
+	color: #FF0;
+	background-color: #353535 !important
+}
