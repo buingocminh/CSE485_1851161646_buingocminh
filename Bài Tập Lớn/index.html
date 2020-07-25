@@ -11,6 +11,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://kit.fontawesome.com/99f845d262.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main-script.js"></script>
 </head>
 
 <body>
@@ -159,11 +160,31 @@
                         </p>
                     </form>
                 </aside>
+                <div id="map-addr">
+                    <span>CHI NHÁNH 1</span>
+                    <div id="addr">
+                        <div>91L cư xá Lý Thường Kiệt, phường 7, quận 5, TPHCM.</div>
+                        <div>Điện thoại: 0939.047.376 - 0909.605.608</div>
 
+                    </div>
+                    <div class="map" id="map1"></div>
+
+                    <span>CHI NHÁNH 2</span>
+                    <div id="addr">
+                        <div>17 Nguyễn Kim, phường 12, quận 5, TPHCM.</div>
+                        <div>Điện thoại: 0939.047.376 - 0909.605.608</div>
+
+                    </div>
+                    <div class="map" id="map2"></div>
+                </div>
             </div>
-
         </div>
-    </div>    
+    </div>
+    <!-- show map 1 -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlW8XkW9JreAYZsBHOpVtLeFGvA4lAMk4&callback=Map1">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlW8XkW9JreAYZsBHOpVtLeFGvA4lAMk4&callback=Map2">
+    </script>
 </body>
 
 </html>
