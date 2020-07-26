@@ -5,7 +5,9 @@ body, html, div, img, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, blockqu
 	list-style: none;
 	outline: none !important;
 }
-
+b {
+    font-weight: bold;
+}
 img, object, embed {
 	border: 0 none;
 	height: auto;
@@ -157,6 +159,7 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	margin-top: 15px;
 	margin-bottom: 0;
 }
+/* map */
 #map-addr span{
 	background-color: #145F98;
 	color: white;
@@ -169,4 +172,47 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	width: 100%;
 	height: 200px;
 	margin-bottom: 20px;
+}
+/* footer */
+.info-own {
+    padding: 20px;
+    background-color: #404040;
+    border-top: 5px #cac7c7 solid;
+    text-align: center;
+    color: #fff;
+}
+.social-links i.fa {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    transition: background-color 0.2s ease-out 0s;
+    font-size: 25px;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.social-links i {
+    display: inline-block;
+    margin: 0 3px;
+}
+.social-links i.fa-facebook {
+    background-color: #3B5A9B;
+}
+.social-links i.fa-twitter {
+    background-color: #1BB2E9;
+}
+.social-links i.fa-google-plus {
+    background-color: #DC4937;
+}
+.social-links i.fa-youtube {
+    background-color: #ED3F41;
+}
+footer .copyright {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #353535;
+    text-align: center;
+    color: #fff;
 }
