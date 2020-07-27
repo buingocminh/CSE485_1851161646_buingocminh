@@ -102,6 +102,8 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	bottom: 0px;
 	color: white;
 	text-align: center;
+	padding: 10px 0px;
+	background-color: #00000080;
 
 }
 
@@ -226,4 +228,16 @@ footer .copyright {
     background-color: #353535;
     text-align: center;
     color: #fff;
+}
+#btn-gotop{
+	display: none;
+	font-size: 40px;
+	color: #145f98;
+	position: fixed;
+	bottom: 70px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: transparent;
 }
