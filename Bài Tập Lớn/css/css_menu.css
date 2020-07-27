@@ -1,4 +1,7 @@
 menu{
+    position: -webkit-sticky;
+    position: sticky;top: 0;
+    z-index: 1000;
     background-color: #145F98;
     display: flex;
     padding: 0px;
@@ -8,14 +11,17 @@ menu ul li {
     float: left;
 
 }
-div{
+div{    
+
     display: block;
 }
 .menu{
+
     font-size: 16px;
    
 }
 #menumain{
+
  width: 100%;   
 }
 .inner{

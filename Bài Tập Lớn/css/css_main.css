@@ -55,7 +55,7 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	font-size: 16px;
 	margin-bottom: 15px;
 	padding-bottom: 0;
-	background: #145f98 url(/image/border-header.png) repeat scroll 0 0;
+	background: #145f98 url(../image/border-header.png) repeat scroll 0 0;
 	line-height: 1em;
 	margin-bottom: 20px;
 	text-align: left;
