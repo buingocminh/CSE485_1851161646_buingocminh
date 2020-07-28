@@ -1,0 +1,48 @@
+.container-md{
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+h3, p{
+    color: blue;
+}
+hr{
+    background-color: blue;
+}
+table td{
+    border: 0px !important;
+     /* border-top: 1px solid #355372 !important; */
+}
+input, select{
+    border: 1px solid blue;
+}
+.circle-up{
+    background-color: blue;
+    /* height: 50px; */
+    width: 20px;
+}
+.fa-arrow-alt-circle-up{
+    color: white;
+    margin-left: 2px;
+}
+.security{
+ float: left;
+ /* height: 100px; */
+ /* background-color: yellowgreen; */
+}
+.robot{
+    margin-left: 100px;
+    background-color: #f9f9f9;
+    border: 2px solid #e1e1e1;
+    width: 300px;
+    border-left: 0px;
+}
+.robot img{
+    margin-left: 50px;
+}
+.submit{
+    float: right;
+    background-color: blue;
+    color: white;
+}
