@@ -8,12 +8,31 @@ body, html, div, img, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, blockqu
 b {
     font-weight: bold;
 }
+a:hover {
+	text-decoration: none;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 img, object, embed {
 	border: 0 none;
 	height: auto;
 	max-width: 100%;
 	vertical-align: middle;
 	height: auto;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
 body {
 	font-family: Helvetica, 'Open Sans', sans-serif;
@@ -35,15 +54,20 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 }
 
 /*  main conten  */
-/* .primary {
-	float: left;
-	width: 71.17543859%;
-} */
-/* .secondary {
-	float: right;
-	width: 27.19298245%;
-	position: relative;
-} */
+.pagecurrent{
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.pagecurrent .fa{
+	width: 8px !important ;
+	height: 14px;
+	margin-left: 5px;
+	margin-right: 8px;
+}
+.pagecurrent p{
+	padding-bottom: 5px;
+}
 .container{
  margin-top: 20px;
 }
@@ -60,6 +84,7 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	margin-bottom: 20px;
 	text-align: left;
 	position: relative;
+	margin-top: 0px;
 }
 .widget-title span {
 	background-color: #145f98;
@@ -70,6 +95,7 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	display: inline-block;	
 	text-transform: uppercase; font-weight:500
 }
+/* intro */
 #intro { margin-bottom:20px;}
 #intro .info-text {
 	float: left;
@@ -93,6 +119,7 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	width: 100%;
 	height: 100%;
 }
+/* slide-no2 */
 .owl-carousel{
 	width: 100% !important;
 }
@@ -106,12 +133,36 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	background-color: #00000080;
 
 }
-
-/* .list-service { margin:0 -1.5%; overflow:hidden}
-.list-service .item  { float:left; margin:0 1.5% 3% 1.5%; width:30.333%; position:relative}
-.item .script { position: absolute; bottom:0px; left:0; right:0; background-color:rgba(0,0,0,0.5); padding:5px;  color:#fff; text-transform:uppercase; text-align:center; font-size:13px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
+/* news */
+.list-post li {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.list-post li .post-content {
+    float: left;
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+figure {
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+.list-post li figure {
+    float: left;
+    width: 35%;
 }
 
+
+
+.list-service { margin:0 -1.5%; overflow:hidden}
+.list-service .item  { float:left; margin:0 1.5% 3% 1.5%; width:47%; position:relative}
+.item .title { position: absolute; bottom:0px; left:0; right:0; background-color:rgba(0,0,0,0.5); padding:5px;  color:#fff; text-transform:uppercase; text-align:center; font-size:13px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
+}
+/*
 #slider-service .owl-dots { display:none}
 #slider-service .owl-nav { top:-34px; right:0; left:inherit; width:75px; padding:0}
 #slider-service  .owl-prev,#slider-service .owl-next { width:25px; height:25px; overflow:hidden; text-indent:-999px; border-radius:2px; z-index:99}
@@ -124,8 +175,9 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	padding: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	color: #fff
+
 }
 #getbox h2 {
 	color: #fff;
@@ -171,6 +223,33 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	width: 100%; line-height:28px;
 	margin-top: 15px;
 	margin-bottom: 0;
+}
+/* button list */
+#bt-list .bt-row{
+	padding: 5px 15px;
+    border: 1px dashed #145f98;
+    color: #145f98;
+    width: 100%;
+    line-height: 44px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: block;
+}
+/* doccument list */
+
+.list-document li {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.list-document li figure {
+    width: 35%;
+    margin-right: 10px;
+    float: left;
+}
+.list-document li a{
+	color: #333;
 }
 /* map */
 #map-addr span{
