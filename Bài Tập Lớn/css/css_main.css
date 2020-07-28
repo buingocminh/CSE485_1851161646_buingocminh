@@ -109,27 +109,18 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	width: 100%;
 	height: 100%;
 }
-/* news */
-.list-post li {
-    background-color: #ffffff;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 20px;
+.owl-carousel{
+	width: 100% !important;
 }
-.list-post li .post-content {
-    float: left;
-    width: 60%;
-    padding-right: 15px;
-    padding-left: 20px;
-}
-figure {
-    margin: 0;
-    text-align: center;
-    position: relative;
-}
-.list-post li figure {
-    float: left;
-    width: 35%;
+.slide-image a{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	text-align: center;
+	padding: 10px 0px;
+	background-color: #00000080;
+
 }
 
 
@@ -254,4 +245,16 @@ footer .copyright {
     background-color: #353535;
     text-align: center;
     color: #fff;
+}
+#btn-gotop{
+	display: none;
+	font-size: 40px;
+	color: #145f98;
+	position: fixed;
+	bottom: 70px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: transparent;
 }
