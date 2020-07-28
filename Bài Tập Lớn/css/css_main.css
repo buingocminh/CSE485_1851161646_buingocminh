@@ -8,12 +8,28 @@ body, html, div, img, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, blockqu
 b {
     font-weight: bold;
 }
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 img, object, embed {
 	border: 0 none;
 	height: auto;
 	max-width: 100%;
 	vertical-align: middle;
 	height: auto;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
 body {
 	font-family: Helvetica, 'Open Sans', sans-serif;
@@ -93,6 +109,29 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 	width: 100%;
 	height: 100%;
 }
+/* news */
+.list-post li {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.list-post li .post-content {
+    float: left;
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+figure {
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+.list-post li figure {
+    float: left;
+    width: 35%;
+}
+
 
 /* .list-service { margin:0 -1.5%; overflow:hidden}
 .list-service .item  { float:left; margin:0 1.5% 3% 1.5%; width:30.333%; position:relative}
