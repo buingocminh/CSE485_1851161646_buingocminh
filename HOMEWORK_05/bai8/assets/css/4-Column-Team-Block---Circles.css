@@ -1,0 +1,126 @@
+.team4 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
+  color: #3e4555;
+}
+
+.team4 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team4 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.team4 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.team4 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team4 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+  color: #316ce8;
+}
+
+.py-5.team4 {
+}
+
+.nav-item:hover > a {
+  color: #FFF !important;
+  background-color: #643a79 !important;
+  border-radius: 3px;
+}
+
+a.active {
+  background-color: #643a79 !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+}
+
+.yourName::placeholder, .yourEmail::placeholder {
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+input::-webkit-input-placeholder:after {
+  content: "*";
+  color: red;
+  font-size: 1.15em;
+}
+
+input::-moz-placeholder:after {
+  content: "*";
+  color: red;
+  font-size: 1.15em;
+}
+
+input:-ms-input-placeholder:after {
+  content: "*";
+  color: red !important;
+  font-size: 1.15em;
+}
+
+#mainNav {
+  background-color: #87509c !important;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #ffffff !important;
+}
+
+.yourMes::placeholder {
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .row.formRow {
+    padding: 0px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .yourEmail, .yourName {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .yourEmail, .yourName {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+}
+
+.footLink:hover {
+  text-decoration: none;
+}
+
+input {
+  color: #ffffff;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #ffffff !important;
+}
+
+.activePort {
+}
+

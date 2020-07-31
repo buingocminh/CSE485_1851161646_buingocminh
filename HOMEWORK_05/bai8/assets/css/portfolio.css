@@ -1,0 +1,26 @@
+.activePort {
+  background-color: #ffffff !important;
+}
+
+#all:hover, #web:hover, #app:hover, #icon:hover {
+  background-color: #ebc985 !important;
+}
+
+@media screen and (max-width: 360px) {
+  .portRow {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .portRow > div > button {
+    width: 60px !important;
+    margin: 0px !important;
+  }
+}
+
+hr {
+  margin: auto;
+}
+
