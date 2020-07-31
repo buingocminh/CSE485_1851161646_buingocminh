@@ -9,5 +9,4 @@ $(document).ready(function () {
             $(this).css("height", '50')
         })
     })
-    if(1!=2){alert("jhgfdajgd")}
 })
