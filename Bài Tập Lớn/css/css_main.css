@@ -52,7 +52,6 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
     height: 10px;
     border-radius: 100%;
 }
-
 /*  main conten  */
 .pagecurrent{
 	font-size: 14px;
@@ -71,6 +70,7 @@ header { background:url(../image/header.jpg) top center no-repeat; height:102px;
 .container{
  margin-top: 20px;
 }
+
 .secondary aside { margin-bottom:20px;}
 .block { margin-bottom:20px;}
 
@@ -306,7 +306,8 @@ footer .copyright {
     padding: 10px;
     background-color: #353535;
     text-align: center;
-    color: #fff;
+	color: #fff;
+	
 }
 #btn-gotop{
 	display: none;

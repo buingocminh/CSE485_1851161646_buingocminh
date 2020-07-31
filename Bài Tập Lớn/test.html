@@ -1,66 +1,88 @@
-<div class="block" id="news">
-    <h3 class="widget-title"><span>Bản tin nổi bật</span></h3>
-    <ul class="list-post">
-        <li>
-            <figure><a href="ban-tin/cho-thue-xe-o-to-tap-lai-16.html"><img
-                        src="image/dichvuchothuexetaplai.jpg"></a></figure>
-            <div class="post-content">
-                <h3 class="entry-title"><a href="ban-tin/cho-thue-xe-o-to-tap-lai-16.html">Cho thuê
-                        xe ô tô tập lái</a></h3>
-                <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true">
-                            2017-07-12 19:59:30</i></span> </div>
-                <div class="script-post">Nhằm mục đích giúp tất cả anh chị đã có GPLX hoặc chưa có
-                    GPLX được rèn luyện thêm những kỹ năng lái xe an toàn nhất trên 2 dòng xe: số
-                    sàn và số tự động, trường dạy lái xe Thống Nhất có nhận dạy kèm bổ túc lái xe số
-                    tự độn ...</div>
-            </div>
-        </li>
-        <li>
-            <figure><a href="ban-tin/kien-thuc-co-ban-cau-tao-o-to-tu-az-4.html"><img
-                        src="image/post8.jpg"></a></figure>
-            <div class="post-content">
-                <h3 class="entry-title"><a
-                        href="ban-tin/kien-thuc-co-ban-cau-tao-o-to-tu-az-4.html">Kiến thức cơ bản
-                        cấu tạo ô tô từ A-Z</a></h3>
-                <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true">
-                            2017-07-03 22:59:18</i></span> </div>
-                <div class="script-post">Chào các anh chị em - những người mà khi mở nắp capo (hay
-                    thậm chí còn ko biết nắp capo là cái gì) thấy một mớ hỗn độn các máy móc chi
-                    tiết trong đó mà ko phân biệt được cái gì ra cái gì, thì đây c ...</div>
-            </div>
-        </li>
-        <li>
-            <figure><a
-                    href="ban-tin/hoc-lai-xe-o-to-qua-tu-dien-cac-ky-hieu-viet-tat-cua-xe-o-to-7.html"><img
-                        src="image/post6.jpg"></a></figure>
-            <div class="post-content">
-                <h3 class="entry-title"><a
-                        href="ban-tin/hoc-lai-xe-o-to-qua-tu-dien-cac-ky-hieu-viet-tat-cua-xe-o-to-7.html">Học
-                        lái xe ô tô qua từ điển các ký hiệu viết tắt của xe ô tô</a></h3>
-                <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true">
-                            2017-07-03 22:58:56</i></span> </div>
-                <div class="script-post">Từ điển các kí hiệu viết tắt của ô tô có thể bạn chưa biết
-                    Thuật ngữ ôtô là từ viết tắt để diễn tả những tính năng luôn đổi mới và ngày
-                    càng hiện đại của ôtô thời nay. Bài viết sau giới thiệu một số thuật ngữ ôtô m
-                    ...</div>
-            </div>
-        </li>
-        <li>
-            <figure><a href="ban-tin/cach-hoc-lai-xe-o-to-b2-than-toc-13.html"><img
-                        src="image/dichvuchothuexetaplai.jpg"></a></figure>
-            <div class="post-content">
-                <h3 class="entry-title"><a
-                        href="ban-tin/cach-hoc-lai-xe-o-to-b2-than-toc-13.html">Cách học lái xe ô tô
-                        B2 “thần tốc”</a></h3>
-                <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true">
-                            2017-07-03 22:58:40</i></span> </div>
-                <div class="script-post">Một phương pháp tốt sẽ mang đến cho người thực hiện những
-                    thành công ngoài mong đợi. Nếu bạn muốn có được tấm bằng lái xe nhanh nhất thì
-                    việc nắm vững cách học lái xe ô tô B2 “thần tốc” là con đường ngắn nhất dẫn bạn
-                    đ� ...</div>
-            </div>
-        </li>
-    </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-ck {
+            position: fixed;
+            bottom: 0px;
+            z-index: 9000
+        }
+
+        /* html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}  */
 
 
+
+        #hide_float_right {
+            text-align: right;
+            font-size: 11px;
+        }
+
+        /* //  cái này là chỉnh font chữ */
+
+        #hide_float_right a {
+            background: #EB1F27;
+            padding: 2px 4px;
+            color: #FFF;
+        }
+
+        #float_content_right {
+            padding-bottom: 100px
+        }
+
+        ;
+        /* //chỉnh khoảng cách vị trí từ popup đến dưới cùng màn hình */
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function hide_float_right() {
+
+            var content = document.getElementById('float_content_right');
+
+            var hide = document.getElementById('hide_float_right');
+
+            if (content.style.display == "none")
+
+            {
+                content.style.display = "block";
+                hide.innerHTML = '<a href="javascript:hide_float_right()">[X]</a>';
+            } else {
+                content.style.display = "none";
+                hide.innerHTML = '<a href="javascript:hide_float_right()">Xem quảng cáo...</a>';
+
+            }
+
+        }
+    </script>
+
+
+
+    <div class="float-ck" style="right: 350px">
+        <!-- //nếu bạn muốn popup bên góc trái thì chọn: left: 0px, nếu ở giữa thì chọn như mình là 400px, còn chọn xuất hiện bên góc phải thì: right:0px nha -->
+
+        <div id="hide_float_right">
+
+            <a href="javascript:hide_float_right()">[X]</a></div>
+
+        <div id="float_content_right">
+
+
+            <!-- //dưới này là chèn nội dung text hoặc hình ảnh nha -->
+            <a href="#"><img src="image/reno4-chung-800-300-800x300.png" width="600" height="400"></a>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
