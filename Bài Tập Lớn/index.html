@@ -258,12 +258,12 @@
             </div>
             <div class="col-lg-4  col-sm-12">
                 <aside id="getbox">
+                    
                     <h2><i class="fa fa-paper-plane"></i>Đăng ký khóa học</h2>
+                    <p id="complete" style="color: red; display: none;" >Đăng ký khóa học thành công!</p>
 
-
-                    <form name="frmRegister" method="post" action="register.php" onSubmit="return chkRegister();">
+                    <form name="frmRegister" >
                         <p class="rows">
-                            <input type="hidden" name="PageUrl" value="http://www.truongdaylaixethongnhat.com/">
                             <input name="Name" type="text" placeholder="Họ và tên">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </p>
@@ -280,7 +280,7 @@
                             <i class="fa fa-phone-square" aria-hidden="true"></i>
                         </p>
                         <p class="rows">
-                            <input name="Email" type="text" placeholder="Email">
+                            <input type="email" name="Email" type="text" placeholder="Email">
                             <i class="fa fa-envelope"></i>
                         </p>
                         <p class="rows">
@@ -300,7 +300,7 @@
                             <textarea name="Content" cols="" rows="3" placeholder="Lời nhắn ..."></textarea>
                         </p>
                         <p>
-                            <input type="submit" name="btnRegister" value="Đăng ký">
+                            <input type="button" name="btnRegister" value="Đăng ký">
                         </p>
                     </form>
                 </aside>
