@@ -44,6 +44,15 @@ body {
 	background-color: #fff 
 }
 header { background:url(../image/header.jpg) top center no-repeat; height:102px;}
+#small-logo{
+
+	display: none;
+	padding: 5px 0px;
+}
+#small-logo img{
+	width: 77.6px;
+	height: 40px;
+}
 .carousel-indicators .active{
     background-color: #145F98;
 }
@@ -244,7 +253,7 @@ figure {
 #getbox a {
 	color: #f4f708
 }
-#getbox input[type="button"] {
+#getbox input[type="submit"] {
 	padding: 5px 0;
 	text-align: center; background-color:#464646;
 	text-transform: uppercase;
@@ -354,3 +363,4 @@ footer .copyright {
 	outline: none;
 	background-color: transparent;
 }
+
