@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trường dạy lái xe Thống Nhất - Administrator</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/99f845d262.js" crossorigin="anonymous"></script>
+
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span>Trường dạy lái xe </span>Thống Nhất</a>
+                <ul class="user-menu">
+                    <li class="dropdown pull-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Admin
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><svg class="glyph stroked male-user">
+                                        <use xlink:href="#stroked-male-user"></use>
+                                    </svg> Hồ sơ</a></li>
+                            <li><a href="#"><svg class="glyph stroked cancel">
+                                        <use xlink:href="#stroked-cancel"></use>
+                                    </svg> Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <form role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </form>
+        <ul class="nav menu">
+            <li><a href="admin.html"><i class="fas fa-columns"></i> Dashboard</a></li>
+            <li><a href="hoc_vien.html"><i class="fas fa-user-graduate"></i>Quản lý học viên</a></li>
+			<li><a href="khoahoc.html"><i class="fas fa-book-open"></i>Quản lý khóa học</a></li>
+			<li ><a href="ki_thi.html"><i class="far fa-file-alt fas"></i>Quản lý Thi</a></li>
+            <li class="active"><a href="ket_qua.html"><i class=" fas  fa-address-card"></i> Quản lý kết quả</a></li>
+            <li><a href="user.html"><i class="fas fa-users"></i> Quản lý người dùng </a></li>
+            <li><a href="setting.html"><i class="fas fa-cogs"></i> Cấu hình</a></li>
+        </ul>
+
+    </div>
+    <!--/.sidebar-->
+
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="admin.html"><i class="fas fa-home"></i></a></li>
+                <li class="active">Danh sách kết quả</li>
+            </ol>
+        </div>
+        <!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Danh sách kết quả</h1>
+            </div>
+        </div>
+        <!--/.row-->
+        <div id="toolbar" class="btn-group">
+            <a href="add_ketqua.html" class="btn btn-success">
+                <i class="glyphicon glyphicon-plus"></i> Thêm kết quả
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table data-toolbar="#toolbar" data-toggle="table">
+
+                            <thead>
+                                <tr>
+                                    <th data-field="id" data-sortable="true">ID</th>
+                                    <th data-field="name" data-sortable="true">Tên học viên</th>
+                                    <th data-field="name" data-sortable="true">Tên kì thi</th>
+                                    <th data-field="" data-sortable="true">số báo danh</th>
+                                    <th>lớp</th>
+                                    <th>kết quả</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="">1</td>
+                                    <td style="">Nguyễn Văn A</td>
+                                    <td style="">Sát hạch A1</td>
+                                    <td>05</td> 
+                                    <td>A1-k24</td>
+                                    <td><span class="label label-success">HOÀN THÀNH</span></td>
+                                    <td class="form-group">
+                                        <a href="edit_ketqua.html" class="btn btn-primary"><i
+                                                class="glyphicon glyphicon-pencil"></i></a>
+                                        <a href="product-edit.html" class="btn btn-danger"><i
+                                                class="glyphicon glyphicon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="">2</td>
+                                    <td style="">Nguyễn Văn A</td>
+                                    <td style="">Sát hạch A1</td>
+                                    <td>05</td>  
+                                    <td>A1-k24</td>
+                                    <td><span class="label label-danger">TRƯỢT</span></td>
+                                    <td class="form-group">
+                                        <a href="edit_ketqua.html" class="btn btn-primary"><i
+                                                class="glyphicon glyphicon-pencil"></i></a>
+                                        <a href="product-edit.html" class="btn btn-danger"><i
+                                                class="glyphicon glyphicon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="">3</td>
+                                    <td style="">Nguyễn Văn A</td>
+                                    <td style="">Sát hạch A1</td>
+                                    <td>05</td>  
+                                    <td>A1-k24</td>
+                                    <td><span class="label label-success">HOÀN THÀNH</span></td>
+                                    <td class="form-group">
+                                        <a href="edit_ketqua.html" class="btn btn-primary"><i
+                                                class="glyphicon glyphicon-pencil"></i></a>
+                                        <a href="product-edit.html" class="btn btn-danger"><i
+                                                class="glyphicon glyphicon-remove"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.main-->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+
+
+</body>
+
+</html>
