@@ -1,7 +1,7 @@
 menu{
     position: -webkit-sticky;
     position: sticky;top: 0;
-    z-index: 1000;
+    z-index: 500;
     background-color: #145F98;
     display: flex;
     padding: 0px;
@@ -92,17 +92,31 @@ border-left: 1px solid #FFFFFF;
     header{
         display: none;
     }
-
     .btn-bar{
         color: #145F98;
         font-size: larger;
-	}
+    }
+    .navbar{
+        width: 100% !important;
+    } 
 	#navbarSupportedContent{
 		width: 240px ; 
         background-color: #333333 !important;
         position: fixed;
         top: 0;
         left: 0;
+    }
+    .menu-overlay {
+        display: none;
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 50;
     }
     #small-logo{
         display: inline !important;
