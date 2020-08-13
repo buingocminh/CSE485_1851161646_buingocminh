@@ -201,13 +201,10 @@ figure {
 .list-service .item  { float:left; margin:0 1.5% 3% 1.5%; width:47%; position:relative}
 .item .title { position: absolute; bottom:0px; left:0; right:0; background-color:rgba(0,0,0,0.5); padding:5px;  color:#fff; text-transform:uppercase; text-align:center; font-size:13px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
 }
-/*
-#slider-service .owl-dots { display:none}
-#slider-service .owl-nav { top:-34px; right:0; left:inherit; width:75px; padding:0}
-#slider-service  .owl-prev,#slider-service .owl-next { width:25px; height:25px; overflow:hidden; text-indent:-999px; border-radius:2px; z-index:99}
-#slider-service .owl-prev { float:left; background: rgba(0,0,0,0.7) url(../images/pre.png) center no-repeat;background-size:5px 11px;}
-#slider-service .owl-next { float:right;background:rgba(0,0,0,0.7)url(../images/next.png) center no-repeat;background-size:5px 11px;} */
-/* get box */
+#complete{
+	display: none;
+	color: red;
+}
 #getbox {
 	background-color: #145f98;
 	border-radius: 5px;
@@ -253,7 +250,7 @@ figure {
 #getbox a {
 	color: #f4f708
 }
-#getbox input[type="submit"] {
+#getbox input[type="button"] {
 	padding: 5px 0;
 	text-align: center; background-color:#464646;
 	text-transform: uppercase;

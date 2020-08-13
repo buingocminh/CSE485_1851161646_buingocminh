@@ -26,53 +26,64 @@
     <menu>
         <section id="menumain">
             <div class="inner">
-                <nav>
+                <nav class="navbar navbar-expand-lg nav-style">
+                    <div class="navbar-brand"></div>
+                    <a href="../index.html" id="small-logo"> <img src="../image/logo-sm.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars btn-bar" aria-hidden="true"></i></span>
                     </button>
-                    <div> <a id="navToggle"><span></span></a><a class="smallogo" href="."><img
-                                src="../image/logo-sm.png"></a>
-                        <ul class="menu">
-                            <li><a href="../index.html" class="active"><i class="fas fa-home"></i></a></li>
-                            <li class="dropdown"><a class="nav_content" href="#">VỀ CHÚNG TÔI <i
-                                        class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown-content">
-                                    <li><a href="gioi-thieu.html">GIỚI THIỆU </a></li>
-                                    <li><a href="trung-tam-dao-tao.html">TRUNG TÂM ĐÀO TẠO</a></li>
-                                    <li><a href="bai-tap-thuc-hanh.html">BÃI TẬP THỰC HÀNH</a></li>
-                                    <li><a href="trung-tam-sat-hach.html">TRUNG TÂM SÁT HẠCH</a></li>
-                                    <li><a href="tuyen-dung.html">TUYỂN DỤNG</a></li>
-                                </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                        <ul class=" navbar-nav menu">
+                            <li class="nav-item"><a href="../index.html" class="active"><i class="fas fa-home"></i></a></li>
+                            <li class="nav-item dropdown">
+                                <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VỀ CHÚNG TÔI
+                                </a>
+                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="http://www.truongdaylaixethongnhat.com/gioi-thieu.html">GIỚI THIỆU </a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/trung-tam-dao-tao.html">TRUNG TÂM ĐÀO TẠO</a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/bai-tap-thuc-hanh.html">BÃI TẬP THỰC HÀNH</a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/trung-tam-sat-hach.html ">TRUNG TÂM SÁT HẠCH</a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/tuyen-dung.html">TUYỂN DỤNG</a>
+                                 </div>
                             </li>
-                            <li><a class="nav_content" href="khoa_dao_tao.html">KHÓA ĐÀO TẠO</a></li>
-                            <li><a class="nav_content" href="dang_ki_hoc.html">ĐĂNG KÝ HỌC</a></li>
-                            <li><a class="nav_content" href="lich_hoc.html">LỊCH HỌC</a></li>
-                            <li class="dropdown"><a class="nav_content" href="tai-lieu-on-thi/">TÀI LIỆU ÔN THI <i
-                                        class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown-content">
-                                    <li><a href="tai-lieu-on-thi/tai-lieu-ly-thuyet-1/">TÀI LIỆU LÝ THUYẾT</a></li>
-                                    <li><a href="tai-lieu-on-thi/tai-lieu-thuc-hanh-2/">TÀI LIỆU THỰC HÀNH</a></li>
-                                    <li><a href="tai-lieu-on-thi/pham-mem-thi-4/">PHẦN MỀM THI</a></li>
-                                </ul>
+                            <li class="nav-item"><a class="nav_content" href="khoa_dao_tao.html">KHÓA ĐÀO TẠO</a></li>
+                            <li class="nav-item"><a class="nav_content" href="dang_ki_hoc.html">ĐĂNG KÝ HỌC</a></li>
+                            <li class="nav-item"><a class="nav_content" href="lich_hoc.html">LỊCH HỌC</a></li>
+                            <li class="nav-item dropdown">
+                                <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    TÀI LIỆU ÔN THI
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="tai-lieu-on-thi/tai-lieu-ly-thuyet-1/">TÀI LIỆU LÝ THUYẾT</a>
+                                    <a href="tai-lieu-on-thi/tai-lieu-thuc-hanh-2/">TÀI LIỆU THỰC HÀNH</a>
+                                    <a href="tai-lieu-on-thi/pham-mem-thi-4/">PHẦN MỀM THI</a>
+                                </div>
                             </li>
-                            <li class="dropdown"><a class="nav_content" href="ban-tin/">BẢN TIN <i
-                                        class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown-content">
-                                    <li><a href="ban-tin/ban-tin-thong-nhat-1/">Bản TIN THỐNG NHẤT</a></li>
-                                    <li><a href="ban-tin/kinh-nghiem-lai-xe-2/">KINH NGHIỆM LÁI XE</a></li>
-                                    <li><a href="ban-tin/the-gioi-o-to-4/">THẾ GIỚI Ô TÔ</a></li>
-                                    <li><a href="ban-tin/ban-tin-tong-hop-6/">BẢN TIN TỔNG HỢP</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="nav_content" id="last_li" href="lien-he.html">LIÊN HỆ</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class=" dropdown-toggle nav_content" href="http://www.truongdaylaixethongnhat.com/ban-tin/" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BẢN TIN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="http://www.truongdaylaixethongnhat.com/ban-tin/ban-tin-thong-nhat-1/">BẢN TIN THỐNG NHẤT</a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/ban-tin/kinh-nghiem-lai-xe-2/">KINH NGHIỆM LÁI XE</a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/ban-tin/the-gioi-o-to-4/">THẾ GIỚI Ô TÔ</a>
+                                    <a href="http://www.truongdaylaixethongnhat.com/ban-tin/ban-tin-tong-hop-6/">BẢN TIN TỔNG HỢP</a>
+                            </div>
+                            <li class="nav-item"><a class="nav_content" href="http://www.truongdaylaixethongnhat.com/lien-he.html">LIÊN HỆ</a></li>
                         </ul>
+                    </div>
                 </nav>
+
             </div>
         </section>
+
     </menu>
+    <div class="menu-overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8  col-sm-12">
@@ -158,7 +169,7 @@
                             <textarea name="Content" cols="" rows="3" placeholder="Lời nhắn ..."></textarea>
                         </p>
                         <p>
-                            <input type="submit" name="btnRegister" value="Đăng ký">
+                            <input type="button" name="btnRegister" value="Đăng ký">
                         </p>
                     </form>
                 </aside>
