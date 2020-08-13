@@ -37,13 +37,14 @@ div{
 }
 .fa-home{
     padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 8px;
-    font-size: 24px;
+    padding-right: 10px;
+    padding-left: 20px;
+    font-size: 22px;
     color: #FFFFFF;
     line-height: 48px;
     float: left;
 }
+.fa-home:hover{color: #FFC676;}
 .nav_content {
  line-height: 48px ;
 color:#FFFFFF;
@@ -59,9 +60,7 @@ border-left: 1px solid #FFFFFF;
 #last_li{
     padding: 0px 0px 0px 20px;
 }
-/* a:not([href]){
-    color: white;
-} */
+
 .nav_content:hover{color: #FFC676; text-decoration: none;}
 
 .dropdown {
