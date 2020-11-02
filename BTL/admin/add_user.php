@@ -12,8 +12,9 @@ if(isset($_POST['sbm'])){
 		$error='<div class="alert alert-danger">Email đã tồn tại !</div>';
 	}else{
 		if ($re_pass == $pass && strlen($pass) >= 6 ) {
+			$hashed_passcode = password_hash($pass, PASSWORD_DEFAULT);
             $sql = "INSERT INTO users(user_name,email,PASSWORD,lever)
-                    VALUES ('$name','$email','$pass','$level')";
+                    VALUES ('$name','$email','$hashed_passcode','$level')";
             mysqli_query($conn, $sql);
             header("location: index.php?page_layout=user");
         } else {

@@ -77,6 +77,7 @@
     <!-- main -->
     <?php
 		if(isset($_GET["page_layout"])){
+			// echo 'geth get';
 			switch($_GET["page_layout"]){
 
 				// User
