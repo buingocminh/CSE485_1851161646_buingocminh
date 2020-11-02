@@ -21,70 +21,9 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header></header>
-    <!-- menu -->
-    <menu>
-        <section id="menumain">
-            <div class="inner">
-                <nav class="navbar navbar-expand-lg nav-style">
-                    <div class="navbar-brand"></div>
-                    <a href="." id="small-logo"> <img src="image/logo-sm.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa fa-bars btn-bar" aria-hidden="true"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                        <ul class=" navbar-nav menu">
-                            <li class="nav-item"><a href="." class="active"><i class="fas fa-home"></i></a></li>
-                            <li class="nav-item dropdown">
-                                <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VỀ CHÚNG TÔI
-                                </a>
-                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="http://www.truongdaylaixethongnhat.com/gioi-thieu.html">GIỚI THIỆU </a>
-                                    <a href="http://www.truongdaylaixethongnhat.com/trung-tam-dao-tao.html">TRUNG TÂM ĐÀO TẠO</a>
-                                    <a href="http://www.truongdaylaixethongnhat.com/bai-tap-thuc-hanh.html">BÃI TẬP THỰC HÀNH</a>
-                                    <a href="http://www.truongdaylaixethongnhat.com/trung-tam-sat-hach.html ">TRUNG TÂM SÁT HẠCH</a>
-                                    <a href="http://www.truongdaylaixethongnhat.com/tuyen-dung.html">TUYỂN DỤNG</a>
-                                 </div>
-                            </li>
-                            <li class="nav-item"><a class="nav_content" href="html/khoa_dao_tao.html">KHÓA ĐÀO TẠO</a></li>
-                            <li class="nav-item"><a class="nav_content" href="html/dang_ki_hoc.html">ĐĂNG KÝ HỌC</a></li>
-                            <li class="nav-item"><a class="nav_content" href="html/lich_hoc.html">LỊCH HỌC</a></li>
-                            <li class="nav-item dropdown">
-                                <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    TÀI LIỆU ÔN THI
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="tai-lieu-on-thi/tai-lieu-ly-thuyet-1/">TÀI LIỆU LÝ THUYẾT</a>
-                                    <a href="tai-lieu-on-thi/tai-lieu-thuc-hanh-2/">TÀI LIỆU THỰC HÀNH</a>
-                                    <a href="tai-lieu-on-thi/pham-mem-thi-4/">PHẦN MỀM THI</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                BẢN TIN
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="ban-tin/ban-tin-thong-nhat-1/">Bản TIN THỐNG NHẤT</a>
-                                    <a href="ban-tin/kinh-nghiem-lai-xe-2/">KINH NGHIỆM LÁI XE</a>
-                                    <a href="ban-tin/the-gioi-o-to-4/">THẾ GIỚI Ô TÔ</a>
-                                    <a href="ban-tin/ban-tin-tong-hop-6/">BẢN TIN TỔNG HỢP</a>
-                            </div>
-                            <li class="nav-item"><a class="nav_content" href="html/lich_hoc.html">LIÊN HỆ</a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-        </section>
-
-    </menu>
-    <div class="menu-overlay"></div>
+    <?php
+    include('include/header.php');
+    ?>
     <!-- slide -->
     <div class="container">
         <div class="slide">
@@ -125,8 +64,7 @@
                         </div>
                         <div class="info-video col-lg-6 col-sm-12 col-12">
                             <div class="videoWrapper">
-                                <iframe width="" height="" src="https://www.youtube.com/embed/x5yj2OShU8Q"
-                                    frameborder="0" allowfullscreen></iframe>
+                                <iframe width="" height="" src="https://www.youtube.com/embed/x5yj2OShU8Q" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -138,10 +76,8 @@
                         <h3 class="widget-title ">
                             <span>Khóa đào tạo</span>
                             <div class="btn">
-                                <button class="btn-slide" id="btn-prev"><i class="fa fa-chevron-left"
-                                        aria-hidden="true"></i></button>
-                                <button class="btn-slide" id="btn-next"><i class="fa fa-chevron-right"
-                                        aria-hidden="true"></i></button>
+                                <button class="btn-slide" id="btn-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                                <button class="btn-slide" id="btn-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                             </div>
                         </h3>
 
@@ -203,8 +139,7 @@
                     <h3 class="widget-title"><span>Bản tin nổi bật</span></h3>
                     <ul class="list-post">
                         <li>
-                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/cho-thue-xe-o-to-tap-lai-16.html"><img
-                                        src="image/dichvuchothuexetaplai.jpg"></a></figure>
+                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/cho-thue-xe-o-to-tap-lai-16.html"><img src="image/dichvuchothuexetaplai.jpg"></a></figure>
                             <div class="post-content">
                                 <h3 class="entry-title"><a href="http://www.truongdaylaixethongnhat.com/ban-tin/cho-thue-xe-o-to-tap-lai-16.html">Cho thuê
                                         xe ô tô tập lái</a></h3>
@@ -217,11 +152,9 @@
                             </div>
                         </li>
                         <li>
-                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/kien-thuc-co-ban-cau-tao-o-to-tu-az-4.html"><img
-                                        src="image/post8.jpg"></a></figure>
+                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/kien-thuc-co-ban-cau-tao-o-to-tu-az-4.html"><img src="image/post8.jpg"></a></figure>
                             <div class="post-content">
-                                <h3 class="entry-title"><a
-                                        href="http://www.truongdaylaixethongnhat.com/ban-tin/kien-thuc-co-ban-cau-tao-o-to-tu-az-4.html">Kiến thức cơ bản
+                                <h3 class="entry-title"><a href="http://www.truongdaylaixethongnhat.com/ban-tin/kien-thuc-co-ban-cau-tao-o-to-tu-az-4.html">Kiến thức cơ bản
                                         cấu tạo ô tô từ A-Z</a></h3>
                                 <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true">
                                             2017-07-03 22:59:18</i></span> </div>
@@ -231,12 +164,9 @@
                             </div>
                         </li>
                         <li>
-                            <figure><a
-                                    href="http://www.truongdaylaixethongnhat.com/ban-tin/hoc-lai-xe-o-to-qua-tu-dien-cac-ky-hieu-viet-tat-cua-xe-o-to-7.html"><img
-                                        src="image/post6.jpg"></a></figure>
+                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/hoc-lai-xe-o-to-qua-tu-dien-cac-ky-hieu-viet-tat-cua-xe-o-to-7.html"><img src="image/post6.jpg"></a></figure>
                             <div class="post-content">
-                                <h3 class="entry-title"><a
-                                        href="http://www.truongdaylaixethongnhat.com/ban-tin/hoc-lai-xe-o-to-qua-tu-dien-cac-ky-hieu-viet-tat-cua-xe-o-to-7.html">Học
+                                <h3 class="entry-title"><a href="http://www.truongdaylaixethongnhat.com/ban-tin/hoc-lai-xe-o-to-qua-tu-dien-cac-ky-hieu-viet-tat-cua-xe-o-to-7.html">Học
                                         lái xe ô tô qua từ điển các ký hiệu viết tắt của xe ô tô</a></h3>
                                 <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true">
                                             2017-07-03 22:58:56</i></span> </div>
@@ -247,8 +177,7 @@
                             </div>
                         </li>
                         <li>
-                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/cach-hoc-lai-xe-o-to-b2-than-toc-13.html"><img
-                                        src="image/dichvuchothuexetaplai.jpg"></a></figure>
+                            <figure><a href="http://www.truongdaylaixethongnhat.com/ban-tin/cach-hoc-lai-xe-o-to-b2-than-toc-13.html"><img src="image/dichvuchothuexetaplai.jpg"></a></figure>
                             <div class="post-content">
                                 <h3 class="entry-title"><a href="http://www.truongdaylaixethongnhat.com/ban-tin/cach-hoc-lai-xe-o-to-b2-than-toc-13.html">Cách
                                         học lái xe ô tô
@@ -342,25 +271,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlW8XkW9JreAYZsBHOpVtLeFGvA4lAMk4&callback=Map2">
     </script>
     <!-- footer -->
-    <div>
-        <div class="info-own">
-            <p><b>TRƯỜNG DẠY LÁI XE THỐNG NHẤT</b><br />
-                Địa chỉ 1: 91L cư xá Lý Thường Kiệt, đường Nguyễn Kim, phường 7, quận 10, TPHCM.<br />
-                Địa chỉ 2: 17 đường Nguyễn Kim, phường 12, quận 5, TPHCM.</p>
-            <p>Điện thoại: 0939.047.376 - 0909.605.608</p>
-            <p>Email: thongnhat91L@yahoo.com.vn</p>
-            <br>
-            <div class=" social-links"> <a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#"
-                    target="_blank"><i class="fa fa-twitter"></i></a> <a href="#" target="_blank"><i
-                        class="fa fa-google-plus"></i></a><a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="copyright">Bản quyền © 2017 Trường dạy lái xe Thống Nhất - Phát triển bởi VNSolution</div>
-        </footer>
-    </div>
-    <!-- go top buton -->
-    <button id="btn-gotop"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    <?php include('include/footer.php')  ?>
 </body>
 
 </html>
