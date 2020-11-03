@@ -35,6 +35,7 @@
 		if($num>0){
 			$_SESSION['users']['mail']=$mail;
 			$_SESSION['users']['pass']=$pass;
+			$_SESSION["user"]["user_lv"] = $row["lever"];
 			header("location:index.php");
 
 		}
@@ -71,7 +72,7 @@
 								</label>
 							</div>
 							<button type="submit" name="btn" class="btn btn-primary">Đăng nhập</button>
-							<a href="" class="btn btn-primary">Quên mật khẩu?</a>
+							<a href="password/reset.php" class="btn btn-primary">Quên mật khẩu?</a>
 						</fieldset>
 					</form>
 				</div>

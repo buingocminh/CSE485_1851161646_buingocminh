@@ -81,9 +81,9 @@
 			switch($_GET["page_layout"]){
 
 				// User
-				case 'user':include_once('user.php'); break;
-				case 'add_user':include_once('add_user.php'); break;
-				case 'edit_user':include_once('edit_user.php'); break;
+				case 'user':include_once('users\user.php'); break;
+				case 'add_user':include_once('users\add_user.php'); break;
+				case 'edit_user':include_once('users\edit_user.php'); break;
 				case 'hocvien':include_once('hoc_vien.php'); break;
 				case 'khoahoc':include_once('khoahoc.php');break;
 				//

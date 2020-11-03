@@ -8,7 +8,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="#"><i class="fas fa-home"></i></a></li>
+				<li><a href="index.php"><i class="fas fa-home"></i></a></li>
 				<li class="active">Trang chủ quản trị</li>
 			</ol>
 		</div>
@@ -55,8 +55,8 @@
 							<i class=" glyph far fa-file-alt fas"></i>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">4</div>
-							<div class="text-muted">kì thi</div>
+							<div class="large">20</div>
+							<div class="text-muted">bài đăng</div>
 						</div>
 					</div>
 				</div>
@@ -68,8 +68,8 @@
 							<i class="glyph fas  fa-address-card"></i>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
-							<div class="text-muted">kết quả</div>
+							<div class="large">2</div>
+							<div class="text-muted">users</div>
 						</div>
 					</div>
 				</div>
