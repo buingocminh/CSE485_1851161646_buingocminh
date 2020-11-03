@@ -33,6 +33,7 @@
 		$row=mysqli_fetch_array($query);
 		$num=mysqli_num_rows($query);
 		if($num>0){
+			$_SESSION['users']['id']=$row['id'];
 			$_SESSION['users']['mail']=$mail;
 			$_SESSION['users']['pass']=$pass;
 			$_SESSION["user"]["user_lv"] = $row["lever"];

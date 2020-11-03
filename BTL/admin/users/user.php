@@ -80,29 +80,29 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                     <table data-toolbar="#toolbar" data-toggle="table">
                         <thead>
                             <tr>
-                                <th data-field="id" data-sortable="true">ID</th>
-                                <th data-field="name" data-sortable="true">Họ & Tên</th>
-                                <th data-field="name" data-sortable="true">Địa chỉ</th>
-                                <th data-field="name" data-sortable="true">SĐT</th>
-                                <th data-field="name" data-sortable="true">Ngày sinh</th>
-                                <th data-field="price" data-sortable="true">Email</th>
+                                <th>ID</th>
+                                <th >Họ & Tên</th>
+                                <th>Địa chỉ</th>
+                                <th>SĐT</th>
+                                <th>Ngày sinh</th>
+                                <th>Email</th>
                                 <th>Quyền</th>
                                 <th>Hành động</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $sql = "SELECT * FROM users ORDER BY id DESC LIMIT $per_rows,$rows_per_page";
+                            $sql = "SELECT * FROM users ORDER BY id  LIMIT $per_rows,$rows_per_page";
                             $query = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_assoc($query)) {
                             ?>
                                 <tr>
-                                    <td style=""><?php echo $row['id']; ?></td>
-                                    <td style=""><?php echo $row['name']; ?></td>
-                                    <td style=""><?php echo $row['address']; ?></td>
-                                    <td style=""><?php echo $row['phone_number']; ?></td>
-                                    <td style=""><?php echo $row['birth_day']; ?></td>
-                                    <td style=""><?php echo $row['email']; ?></td>
+                                    <td ><?php echo $row['id']; ?></td>
+                                    <td ><?php echo $row['name']; ?></td>
+                                    <td ><?php echo $row['address']; ?></td>
+                                    <td ><?php echo $row['phone_number']; ?></td>
+                                    <td ><?php echo $row['birth_day']; ?></td>
+                                    <td ><?php echo $row['email']; ?></td>
                                     <td><span class="label label-danger"><?php if ($row['lever'] == 1) {
                                                                                 echo "Admin";
                                                                             } else {
