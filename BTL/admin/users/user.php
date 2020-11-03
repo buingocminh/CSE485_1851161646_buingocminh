@@ -7,9 +7,6 @@ if (!defined("tem") && $_SESSION["user"]["user_lv"] == 2) { ?>
             <button><a href="index.php">Trở về</a></button>
         </div>
         <!--/.row-->
-
-
-
     </div>
 <?php die('');
 } ?>
