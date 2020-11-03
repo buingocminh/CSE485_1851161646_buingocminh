@@ -62,7 +62,7 @@ if (!defined("tem") && $_SESSION["user"]["user_lv"] == 2) { ?>
             header("location:index.php?page_layout=product");
         }
     }else{
-        header("location:index.php?page_layout=product");
+        header("location:index.php?page_layout=class");
     }
 
 ?>
@@ -97,25 +97,23 @@ if (!defined("tem") && $_SESSION["user"]["user_lv"] == 2) { ?>
                                 </div>
                                                                 
                                 <div class="form-group">
-                                    <label>Giá sản phẩm</label>
-                                    <input type="number" name="prd_price" required value="<?php echo $row['prd_price']; ?>" class="form-control">
+                                    <label>ngày bắt đầu</label>
+                                    <input type="date" name="prd_price" required value="<?php echo $row['prd_price']; ?>" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Bảo hành</label>
-                                    <input type="text" name="prd_warranty" required value="<?php echo $row['prd_warranty']; ?>" class="form-control">
+                                    <label>ngày bắt đầu</label>
+                                    <input type="date" name="prd_warranty" required value="<?php echo $row['prd_warranty']; ?>" class="form-control">
                                 </div>    
                                 <div class="form-group">
-                                    <label>Phụ kiện</label>
-                                    <input type="text" name="prd_accessories" required value="<?php echo $row['prd_accessories']; ?>" class="form-control">
-                                </div>                  
-                                <div class="form-group">
-                                    <label>Khuyến mãi</label>
-                                    <input type="text" name="prd_promotion" required value="<?php echo $row['prd_promotion']; ?>" class="form-control">
-                                </div>  
-                                <div class="form-group">
-                                    <label>Tình trạng</label>
-                                    <input type="text" name="prd_new" required value="<?php echo $row['prd_new']; ?>" type="text" class="form-control">
-                                </div>  
+									<label> lịch học</label>
+									<select name="schedule" class="form-control">
+										<option selected value=1>Từ 18h-20h, Thứ 2,4,6</option>
+										<option value=2>Từ 7h-9h, Thứ 2,4,6</option>
+										<option value=3>Từ 18h-20h, Thứ 3,5,7</option>
+										<option value=4>Từ 7h-9h, Thứ 3,5,7</option>
+									</select>
+								</div>                  
+                                
                                 
                             </div>
                             <div class="col-md-6">
@@ -127,45 +125,20 @@ if (!defined("tem") && $_SESSION["user"]["user_lv"] == 2) { ?>
                                         <img width="160px" height="215" src="img/product/<?php echo $row['prd_image']; ?>">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Danh mục</label>
-                                    <select name="cat_id" class="form-control">
-                                        <?php
-                                        $sql_cat = "SELECT*FROM category ORDER BY cat_id ASC";
-                                        $query_cat = mysqli_query($conn,$sql_cat);
-                                        while($row_cat = mysqli_fetch_array($query_cat)){ ?>
-                                            <option <?php if($row_cat['cat_id'] == $row['cat_id']){ echo 'selected';} ?> value=<?php echo $row_cat['cat_id']; ?>><?php echo $row_cat['cat_name']; ?></option>                            
-                                        <?php } ?>
-                                    </select>
-                                </div>
+
                                 
-                                <div class="form-group">
-                                    <label>Trạng thái</label>
-                                    <select name="prd_status" class="form-control">
-                                        <option <?php if($row['prd_status'] ==1){echo 'selected';} ?> value=1>con hang</option>
-                                        <option <?php if($row['prd_status'] ==0){echo 'selected';} ?> value=0>het hang</option>
-                                    </select>
-                                </div>
                                 
-                                <div class="form-group">
-                                    <label>Sản phẩm nổi bật</label>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input <?php if($row['prd_featured'] ==1){ echo 'checked'; }?> name="prd_featured" type="checkbox" value=1>Nổi bật
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
+                               
+                            </div>
+                            <div class="form-group">
                                         <label>Mô tả sản phẩm</label>
                                         <textarea name="prd_details" required class="form-control" rows="3"><?php echo $row['prd_details']; ?></textarea>
                                         <script>
                                             CKEDITOR.replace("prd_details");
                                         </script>
-                                    </div>
-                                
-                                <button type="submit" name="sbm" class="btn btn-primary">Cập nhật</button>
-                                <button type="reset" class="btn btn-default">Làm mới</button>
                             </div>
+                            <button type="submit" name="sbm" class="btn btn-primary">Cập nhật</button>
+                            <button type="reset" class="btn btn-default">Làm mới</button>
                         </form>
                         </div>
                     </div>
