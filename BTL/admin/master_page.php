@@ -66,8 +66,8 @@
 			<li class="<?php if(!isset($_GET['page_layout'])) {echo 'active';} ?>"><a href="index.php"><i class="fas fa-columns"></i> Dashboard</a></li>
 			<li class="<?php if($_GET['page_layout'] == 'hoc_vien') {echo 'active';} ?>"><a href="index.php?page_layout=hocvien"><i class="fas fa-user-graduate"></i>Quản lý học viên</a></li>
 			<li class="<?php if($_GET['page_layout'] == 'khoa_hoc') {echo 'active';} ?>"><a href="index.php?page_layout=khoahoc"><i class="fas fa-book-open"></i>Quản lý khóa hoc</a></li>
-			<li class="<?php if($_GET['page_layout'] == 'topic') {echo 'active';} ?>"><a href="<?php if($_GET['page_layout'] == 'topic'||'edit_topic'||'add_topic') {echo 'active';} ?>"><i class="far fa-file-alt fas"></i>Quản chủ đề </a></li>
-			<li class="<?php if($_GET['page_layout'] == 'post') {echo 'active';} ?>"><a href=""><i class=" fas  fa-address-card"></i> Quản lý bài đăng</a></li>
+			<li class="<?php if($_GET['page_layout'] == 'topic') {echo 'active';} ?>"><a href=""><i class="far fa-file-alt fas"></i>Quản chủ đề </a></li>
+			<li class="<?php if($_GET['page_layout'] == 'post') {echo 'active';} ?>"><a href="index.php?page_layout=post"><i class=" fas  fa-address-card"></i> Quản lý bài đăng</a></li>
 			<li class="<?php if($_GET['page_layout'] == 'user') {echo 'active';} ?>"><a href=""><i class="fas fa-users"></i> Quản lý người dùng </a></li>
 			<!-- <li><a href="setting.html"><i class="fas fa-cogs"></i> Cấu hình</a></li> -->
 		</ul>
@@ -81,11 +81,12 @@
 			switch($_GET["page_layout"]){
 
 				// User
-				case 'user':include_once('users\user.php'); break;
-				case 'add_user':include_once('users\add_user.php'); break;
-				case 'edit_user':include_once('users\edit_user.php'); break;
-				case 'hocvien':include_once('hoc_vien.php'); break;
-				case 'khoahoc':include_once('khoahoc.php');break;
+				case 'user':include_once('users/user.php'); break;
+				case 'add_user':include_once('users/add_user.php'); break;
+				case 'edit_user':include_once('users/edit_user.php'); break;
+				case 'hocvien':include_once('student/hoc_vien.php'); break;
+				case 'khoahoc':include_once('class\khoahoc.php');break;
+				case 'post':include_once('post/post.php');break;
 				//
 				
 
