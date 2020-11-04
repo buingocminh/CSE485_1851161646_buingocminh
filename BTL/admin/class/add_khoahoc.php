@@ -21,7 +21,7 @@ if (isset($_POST['sbm'])) {
     // anh
     $class_image = $_FILES['image']['name'];
     $tmp_name  = $_FILES['image']['tmp_name'];
-    move_uploaded_file($tmp_name, "../img/".$class_image);
+    move_uploaded_file($tmp_name, "img/".$class_image);
     echo  $sql = "INSERT INTO class(
         name,
         picture,
