@@ -115,8 +115,8 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 												break;
 										} ?></td>
 									<td class="form-group">
-										<a href="edit_khoahoc.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-										<a href="/" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+										<a href="index.php?page_layout=edit_class&id=<?php echo $row['id'] ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+										<a onclick="return delItem('<?php echo $row['name']; ?> ')" href="class\delete_khoahoc.php?id=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
 									</td>
 								</tr>
 							<?php } ?>

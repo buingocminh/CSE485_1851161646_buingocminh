@@ -19,10 +19,18 @@ if (isset($_POST['sbm'])) {
     $about = $_POST['about'];
 
     // anh
-    $class_image = $_FILES['image']['name'];
-    $tmp_name  = $_FILES['image']['tmp_name'];
-    move_uploaded_file($tmp_name, "img/".$class_image);
-    echo  $sql = "INSERT INTO class(
+
+    //kiểm tra tên khóa học tồn tại hay ko 
+    $sql = "SELECT*FROM class WHERE name = '$name'";
+    $query = mysqli_query($conn, $sql);
+    $num_row = mysqli_num_rows($query);
+    if ($num_row > 0) {
+        $error = '<div class="alert alert-danger">tên khóa học đã tồn tại !</div>';
+    } else {
+        $class_image = $_FILES['image']['name'];
+        $tmp_name  = $_FILES['image']['tmp_name'];
+        move_uploaded_file($tmp_name, "img/" . $class_image);
+        $sql = "INSERT INTO class(
         name,
         picture,
         about,
@@ -36,16 +44,13 @@ if (isset($_POST['sbm'])) {
     '$start',
     '$end',
     '$schedule')";
-    mysqli_query($conn, $sql);
-    header("location:index.php?page_layout=product");
+        mysqli_query($conn, $sql);
+        header("location:index.php?page_layout=product");
+    }
 }
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
             <ol class="breadcrumb">
@@ -58,7 +63,7 @@ if (isset($_POST['sbm'])) {
 
         <div class="row">
             <div class="col-lg-12">
-            <h1 class="page-header">Thêm khóa học</h1>
+                <h1 class="page-header">Thêm khóa học</h1>
             </div>
         </div>
         <!--/.row-->
@@ -67,6 +72,11 @@ if (isset($_POST['sbm'])) {
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="col-md-6">
+                            <?php
+                            if (isset($error)) {
+                                echo $error;
+                            }
+                            ?>
                             <form role="form" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>Tên khóa học</label>
