@@ -2,7 +2,9 @@
 
 
 
-
+<?php
+        $sql = "SELECT*FROM ";
+    ?>
 
 
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
@@ -29,7 +31,9 @@
 							<i class=" glyph fas fa-user-graduate"></i>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
+							<div class="large"><?php
+                                echo mysqli_num_rows(mysqli_query($conn,$sql."students"));
+                            ?></div>
 							<div class="text-muted">học viên</div>
 						</div>
 					</div>
@@ -42,7 +46,9 @@
 							<i class="glyph fas fa-book-open"></i>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">5</div>
+							<div class="large"><?php
+                                echo mysqli_num_rows(mysqli_query($conn,$sql."class"));
+                            ?></div>
 							<div class="text-muted">khóa học</div>
 						</div>
 					</div>
@@ -55,7 +61,9 @@
 							<i class=" glyph far fa-file-alt fas"></i>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">20</div>
+							<div class="large"><?php
+                                echo mysqli_num_rows(mysqli_query($conn,$sql."post"));
+                            ?></div>
 							<div class="text-muted">bài đăng</div>
 						</div>
 					</div>
@@ -68,7 +76,9 @@
 							<i class="glyph fas  fa-address-card"></i>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">2</div>
+							<div class="large"><?php
+                                echo mysqli_num_rows(mysqli_query($conn,$sql."users"));
+                            ?></div>
 							<div class="text-muted">users</div>
 						</div>
 					</div>

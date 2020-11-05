@@ -28,11 +28,11 @@
 	if(isset($_POST["btn"])){
 		$mail=$_POST["mail"];
 		$pass=$_POST["pass"];
-		$sql="SELECT * FROM users WHERE email='$mail' AND PASSWORD='$pass'";
+		$sql="SELECT * FROM users WHERE email='$mail'";
 		$query=mysqli_query($conn,$sql);
 		$row=mysqli_fetch_array($query);
 		$num=mysqli_num_rows($query);
-		if($num>0){
+		if($num>0 && password_verify($pass, $row['password'])){
 			$_SESSION['users']['id']=$row['id'];
 			$_SESSION['users']['mail']=$mail;
 			$_SESSION['users']['pass']=$pass;

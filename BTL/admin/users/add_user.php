@@ -36,7 +36,7 @@ if(isset($_POST['sbm'])){
             mysqli_query($conn, $sql);
             header("location: index.php?page_layout=user");
         } else {
-			if($re_pass =! $pass){
+			if($re_pass != $pass){
                 $error = '<div class="alert alert-danger">Mat khau nhap lai SAI! Vui long nhap lai.</div>';
             }
             if(strlen($pass) <6){

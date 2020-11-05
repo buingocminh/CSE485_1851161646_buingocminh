@@ -106,7 +106,7 @@ if (isset($_POST['sbm'])) {
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Ảnh sản phẩm</label>
-                                <input type="file" name="image">
+                                <input type="file" required name="image">
                                 <br>
                                 <div>
                                     <img width="160px" height="215" src="">
