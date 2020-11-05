@@ -1,4 +1,4 @@
-    <?php
+<?php
 if (!defined("tem") && $_SESSION["user"]["user_lv"] == 2) { ?>
 
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
@@ -64,7 +64,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Quản lý bài đăng</h1>
+				<h1 class="page-header">Quản lý bài đăng thuộc chủ đề</h1>
 			</div>
 		</div>
 		<!--/.row-->
@@ -90,8 +90,8 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 							</thead>
                         <tbody>
                             <?php
-                            
-                            $sql="SELECT * from post ORDER BY id LIMIT $per_rows,$rows_per_page";
+                            $topic_id=$_GET['id'];
+                            $sql="SELECT * from post WHERE topic_id=$topic_id ORDER BY id  LIMIT $per_rows,$rows_per_page";
                             $result = mysqli_query($conn, $sql);
                             if($result)
                                 while($row=mysqli_fetch_assoc($result)){
@@ -100,7 +100,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                         <tr>
                             <td><?php echo $row['id'] ?></td>
                             <td><?php echo $row['title']?></td>
-                            <td><img src="img/<?php echo $row['image']?>" style="max-width: 100%; max-height: 200px;"  alt=" không có ảnh"></td>
+                            <td><img src="img/<?php echo $row['image']?>" style="max-width: 100%; height: 100px;"  alt=""></td>
                             <td><?php echo $row['short_description'] ?></td>
                         
                             <td><?php 

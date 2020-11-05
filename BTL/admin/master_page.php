@@ -93,9 +93,10 @@
 				case 'add_class':include_once('class/add_khoahoc.php');break;
 				case 'edit_class':include_once('class/edit_khoahoc.php');break;
 				//topic
-				case 'class':include_once('topic/topic.php');break;
+				case 'topic':include_once('topic/topic.php');break;
 				case 'add_topic':include_once('topic/add_topic.php');break;
 				case 'edit_topic':include_once('topic/edit_topic.php');break;
+				case 'view_topic':include_once('topic/view_topic.php');break;
 
 				//post
 				case 'post':include_once('post/post.php');break;
