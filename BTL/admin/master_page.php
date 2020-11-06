@@ -42,7 +42,7 @@
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Admin <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#"><svg class="glyph stroked male-user">
+							<li><a href="index.php?page_layout=change_pass"><svg class="glyph stroked male-user">
 										<use xlink:href="#stroked-male-user"></use>
 									</svg> Đổi mật khẩu </a></li>
 							<li><a href="logout.php"><svg class="glyph stroked cancel">
@@ -58,9 +58,9 @@
 
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<form role="search">
-			<div class="form-group">
+			<!-- <div class="form-group">
 				<input type="text" class="form-control" placeholder="Search">
-			</div>
+			</div> -->
 		</form>
 		<ul class="nav menu">
 			<li class="<?php if(!isset($_GET['page_layout'])) {echo 'active';} ?>"><a href="index.php"><i class="fas fa-columns"></i> Dashboard</a></li>
@@ -84,9 +84,9 @@
 				case 'user':include_once('users/user.php'); break;
 				case 'add_user':include_once('users/add_user.php'); break;
 				case 'edit_user':include_once('users/edit_user.php'); break;
-
+				case 'change_pass':include_once('users/change_pass.php'); break;
 				//students
-				case 'students':include_once('student/hoc_vien.php'); break;
+				case 'students':include_once('sudent/hoc_vien.php'); break;
 				case 'edit_students':include_once('edit_student/hoc_vien.php'); break;
 				//class
 				case 'class':include_once('class/khoahoc.php');break;
