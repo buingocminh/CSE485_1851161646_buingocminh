@@ -25,23 +25,41 @@ $(document).ready(function () {
     }
   })
   // form event
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
   $('[name="btnRegister"]').click(function () {
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    if ($('[name="Name"]').val() == "") {
-      alert("Vui lòng nhập 'Họ và tên' của bạn!"); 
-      $("#frmRegister").submit(function(e) {
-     return false;
-    });
-    }
-    else if ($('[name="Birthday"]').val() == "") {alert("Vui lòng nhập 'ngày sinh' của bạn!"); return false;}
+    if ($('[name="Name"]').val() == "") alert("Vui lòng nhập 'Họ và tên' của bạn!"); 
+    else if ($('[name="Birthday"]').val() == "") alert("Vui lòng nhập 'ngày sinh' của bạn!")
     else if ($('[name="Address"]').val() == "") alert("Vui lòng nhập 'Địa chỉ' liên lạc!")
     else if ($('[name="Phone"]').val() == "") alert("Vui lòng nhập 'Số điện thoại' liên lạc!")
     else if (!($.isNumeric($('[name="Phone"]').val()))) alert("vui lòng nhập chính xac số điện thoại")
     else if (!emailReg.test($('[name="Email"]').val())) alert("vui lòng nhập chính xác email")
-    else if ($('[name="Licence"]').val() == "") alert("lkjdhash")
+    else if($('[name=Class]').val()==0) alert("Vui lòng chọn 1 khoá học!") 
     else {
-      $("#complete").show()
-      $
+      var sname= $('[name="Name"]').val() ;
+      var sbirthday= $('[name="Birthday"]').val();
+      var sadd =$('[name="Address"]').val();
+      var sphone = $('[name="Phone"]').val();
+      var semail = $('[name="Email"]').val();
+      var sclass = $('[name=Class]').val();
+      $.ajax({
+        type: 'POST',
+        url: 'signup_class.php',
+        data: {
+          name:sname,
+          birthday:sbirthday,
+          add:sadd,
+          phone:sphone,
+          email:semail,
+          class:sclass  
+        },
+        dataType: 'json',
+        success:function(res){
+          alert(res);
+        }
+      })
     }
   })
   // menu responsive

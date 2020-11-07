@@ -38,7 +38,7 @@
 			$_SESSION['users']['pass']=$pass;
 			$_SESSION["user"]["user_lv"] = $row["lever"];
 			header("location:index.php");
-
+			// 
 		}
 		else
 		{

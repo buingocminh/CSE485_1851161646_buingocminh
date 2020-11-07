@@ -17,11 +17,15 @@
     <script src="js/owl.carousel.js"></script>
     <script src="https://kit.fontawesome.com/99f845d262.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script src="js/main-script.js"></script>
+
 </head>
 
 <body>
     <?php
+    require_once('admin/connect.php');
     include('include/header.php');
     ?>
     <!-- slide -->
