@@ -45,7 +45,7 @@ if (isset($_POST['sbm'])) {
     '$end',
     '$schedule')";
         mysqli_query($conn, $sql);
-        header("location:index.php?page_layout=product");
+        header("location:index.php?page_layout=class");
     }
 }
 ?>
