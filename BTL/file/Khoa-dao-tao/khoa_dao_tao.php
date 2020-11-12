@@ -7,16 +7,16 @@
     <title>Trường dạy lái xe Thống Nhất</title>
     <link rel="icon" href="../image/favicon.ico" type="image/icon">
     <!-- css -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/css_menu.css">
-    <link rel="stylesheet" href="../css/css_main.css">
-    <link rel="stylesheet" href="../css/reponsive.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/css_menu.css">
+    <link rel="stylesheet" href="../../css/css_main.css">
+    <link rel="stylesheet" href="../../css/reponsive.css">
     <!-- script -->
-    <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/owl.carousel.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/owl.carousel.js"></script>
     <script src="https://kit.fontawesome.com/99f845d262.js" crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/main-script.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/main-script.js"></script>
 </head>
 
 <body>
@@ -97,7 +97,7 @@
                                     lái
                                     xe hạng B1</span></a></div>
                         <div class="item"><a href="khoa-dao-tao/bang-lai-xe-hang-b2-5.html"><img
-                                    src="../image/banglaiotoB2.jpg" alt="Bằng lái xe hạng B2"><span class="title">Bằng
+                                    src="../" alt="Bằng lái xe hạng B2"><span class="title">Bằng
                                     lái
                                     xe hạng B2</span></a></div>
                         <div class="item"><a href="khoa-dao-tao/bang-lai-xe-o-to-hang-c-6.html"><img

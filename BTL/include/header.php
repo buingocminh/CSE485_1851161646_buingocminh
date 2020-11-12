@@ -27,7 +27,7 @@
                                     <a href="http://www.truongdaylaixethongnhat.com/tuyen-dung.html">TUYỂN DỤNG</a>
                                  </div>
                             </li>
-                            <li class="nav-item"><a class="nav_content" href="html/khoa_dao_tao.html">KHÓA ĐÀO TẠO</a></li>
+                            <li class="nav-item"><a class="nav_content" href="file/Khoa-dao-tao/Khoa_dao_tao.php">KHÓA ĐÀO TẠO</a></li>
                             <li class="nav-item"><a class="nav_content" href="html/dang_ki_hoc.html">ĐĂNG KÝ HỌC</a></li>
                             <li class="nav-item"><a class="nav_content" href="html/lich_hoc.html">LỊCH HỌC</a></li>
                             <li class="nav-item dropdown">
