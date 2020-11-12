@@ -46,7 +46,7 @@ $(document).ready(function () {
       var sclass = $('[name=Class]').val();
       $.ajax({
         type: 'POST',
-        url: 'signup_class.php',
+        url: 'http://localhost/CSE485_1851161646_buingocminh/BTL/signup_class.php',
         data: {
           name:sname,
           birthday:sbirthday,

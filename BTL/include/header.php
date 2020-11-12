@@ -6,7 +6,7 @@
             <div class="inner">
                 <nav class="navbar navbar-expand-lg nav-style">
                     <div class="navbar-brand"></div>
-                    <a href="." id="small-logo"> <img src="image/logo-sm.png" alt=""></a>
+                    <a href="." id="small-logo"> <img src="admin/img/logo-sm.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,9 @@
                                     <a href="http://www.truongdaylaixethongnhat.com/tuyen-dung.html">TUYỂN DỤNG</a>
                                  </div>
                             </li>
-                            <li class="nav-item"><a class="nav_content" href="file/Khoa-dao-tao/Khoa_dao_tao.php">KHÓA ĐÀO TẠO</a></li>
-                            <li class="nav-item"><a class="nav_content" href="html/dang_ki_hoc.html">ĐĂNG KÝ HỌC</a></li>
-                            <li class="nav-item"><a class="nav_content" href="html/lich_hoc.html">LỊCH HỌC</a></li>
+                            <li class="nav-item"><a class="nav_content" href="http://localhost/CSE485_1851161646_buingocminh/BTL/file/Khoa-dao-tao/Khoa_dao_tao.php">KHÓA ĐÀO TẠO</a></li>
+                            <li class="nav-item"><a class="nav_content" href="http://localhost/CSE485_1851161646_buingocminh/BTL/file/dang_ki_hoc.html">ĐĂNG KÝ HỌC</a></li>
+                            <li class="nav-item"><a class="nav_content" href="http://localhost/CSE485_1851161646_buingocminh/BTL/file/lich_hoc.html">LỊCH HỌC</a></li>
                             <li class="nav-item dropdown">
                                 <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
