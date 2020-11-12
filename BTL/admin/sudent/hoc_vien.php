@@ -85,25 +85,27 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                                 <th data-field="name" data-sortable="true">Họ & Tên</th>
                                 <th>Số điện thoại</th>
                                 <th data-field="price" data-sortable="true">chương trình</th>
-                                <th>Lớp học</th>
-                                <th>Lịch học</th>
+                                <th>địa chỉ</th>
+                                <th>email</th>
+                                <th>trạng thái</th>
                                 <th>Hành động</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $sql = "SELECT*FROM students
+                            echo $sql = "SELECT*FROM students
                                INNER JOIN class ON students.class = class.id
-                               ORDER BY prd_id DESC LIMIT $per_rows, $rows_per_page;";
+                               ORDER BY students.id DESC LIMIT $per_rows, $rows_per_page;";
                             $query = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>
                                 <tr>
-                                    <td style="">1</td>
-                                    <td style="">Nguyễn Văn A</td>
-                                    <td>0389189969</td>
-                                    <td style="">Bằng A1</td>
-                                    <td>A1-K24</td>
+                                    <td style=""><?php echo $row[0] ?></td>
+                                    <td style=""><?php echo $row[1] ?></td>
+                                    <td><?php echo $row["phone_number"] ?></td>
+                                    <td style=""><?php echo $row["name"] ?></td>
+                                    <td>Từ 18h-20h, Thứ 2,4,6</td>
+                                    <td>Từ 18h-20h, Thứ 2,4,6</td>
                                     <td>Từ 18h-20h, Thứ 2,4,6</td>
                                     <td class="form-group">
                                         <a href="edit_hoc_vien.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
