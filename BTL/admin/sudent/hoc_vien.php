@@ -93,7 +93,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                         </thead>
                         <tbody>
                             <?php
-                            echo $sql = "SELECT*FROM students
+                            $sql = "SELECT*FROM students
                                INNER JOIN class ON students.class = class.id
                                ORDER BY students.id DESC LIMIT $per_rows, $rows_per_page;";
                             $query = mysqli_query($conn, $sql);
