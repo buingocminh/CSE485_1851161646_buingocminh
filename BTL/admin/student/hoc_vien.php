@@ -17,7 +17,7 @@ if (isset($_GET['page'])) {
 } else {
     $page = 1;
 }
-$rows_per_page = 4;
+$rows_per_page = 12;
 $per_rows = $page * $rows_per_page - $rows_per_page;
 // LAY TONG SO BAN GHI
 $total_rows = mysqli_num_rows(mysqli_query($conn, " SELECT*FROM students"));
