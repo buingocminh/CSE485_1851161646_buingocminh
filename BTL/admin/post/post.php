@@ -17,10 +17,10 @@ if (isset($_GET['page'])) {
 } else {
     $page = 1;
 }
-$rows_per_page = 4;
+$rows_per_page = 3;
 $per_rows = $page * $rows_per_page - $rows_per_page;
 // LAY TONG SO BAN GHI
-$total_rows = mysqli_num_rows(mysqli_query($conn, " SELECT*FROM users"));
+$total_rows = mysqli_num_rows(mysqli_query($conn, " SELECT*FROM post"));
 $total_page = ceil($total_rows / $rows_per_page);
 
 // button phan trang

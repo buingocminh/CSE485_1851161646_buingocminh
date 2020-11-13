@@ -106,7 +106,8 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                                     <td style=""><?php echo $row["name"] ?></td>
                                     <td><?php echo $row['addres'] ?></td>
                                     <td><?php echo $row['email'] ?></td>
-                                    <td><?php if ($row[8]==1 ) echo 'Đã xác minh'; else echo 'Chưa xác minh'?></td>
+                                    <td><?php if ($row[8] == 1) echo 'Đã xác minh';
+                                        else echo 'Chưa xác minh' ?></td>
                                     <td class="form-group">
                                         <a href="student/delete_hocvien.php?id=<?php echo $row[0] ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                                     </td>
@@ -118,11 +119,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                 <div class="panel-footer">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                            <?php echo $list_pages; ?>
                         </ul>
                     </nav>
                 </div>
