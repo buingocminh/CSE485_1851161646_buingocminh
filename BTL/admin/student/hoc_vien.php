@@ -45,7 +45,7 @@ $page_next = $page + 1;
 if ($page_next > $total_page) {
     $page_next = $total_page;
 }
-$list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=studentspage=' . $page_next . '">&raquo;</a></li>';
+$list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=students$page=' . $page_next . '">&raquo;</a></li>';
 
 ?>
 <script>
