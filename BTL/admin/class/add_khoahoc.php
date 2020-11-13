@@ -122,14 +122,15 @@ if (isset($_POST['sbm'])) {
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Nội dung khóa học</label>
-                            <textarea name="about" required class="form-control" rows="3"></textarea>
-                            <script>
-                                CKEDITOR.replace("about");
-                            </script>
+                            <label>Nội dung</label>
+                            <textarea name="about" id="about" cols="92" rows="10"></textarea>
+                                <script>
+                                    CKEDITOR.replace('about');
+                                </script>
                         </div>
                         <button type="submit" name="sbm" class="btn btn-primary">thêm mới</button>
                         <button type="reset" class="btn btn-default">Làm mới</button>
+                        
                         </form>
                     </div>
                 </div>

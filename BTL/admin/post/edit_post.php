@@ -127,7 +127,7 @@ if (isset($_POST['sbm'])) {
                                 <input type="file" name="image" value="img/<?php echo $row['image']?>">
                                 <br>
                                 <div>
-                                    <img width="160px" height="215" src="">
+                                    <img width="160px" height="215" src="img/<?php echo $row['image']?>">
                                 </div>
                             </div>
                         </div>

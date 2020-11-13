@@ -20,7 +20,7 @@ if (isset($_GET['page'])) {
 $rows_per_page = 4;
 $per_rows = $page * $rows_per_page - $rows_per_page;
 // LAY TONG SO BAN GHI
-$total_rows = mysqli_num_rows(mysqli_query($conn, " SELECT*FROM users"));
+$total_rows = mysqli_num_rows(mysqli_query($conn, " SELECT*FROM class"));
 $total_page = ceil($total_rows / $rows_per_page);
 
 // button phan trang
@@ -30,7 +30,7 @@ $page_perv = $page - 1;
 if ($page_perv < 1) {
 	$page_perv = 1;
 }
-$list_pages .=  '<li class="page-item"><a class="page-link" href="index.php?page_layout=class&page=' . $page_perv . '">&laquo;</a></li>';
+$list_pages .=  '<li class="page-item"><a class="page-link" href="index.php?page_layout=topic&page=' . $page_perv . '">&laquo;</a></li>';
 
 for ($i = 1; $i <= $total_page; $i++) {
 	if ($i == $page) {
@@ -38,14 +38,14 @@ for ($i = 1; $i <= $total_page; $i++) {
 	} else {
 		$active = '';
 	}
-	$list_pages .= '<li class="page-item ' . $active . '"><a class="page-link" href="index.php?page_layout=class&page=' . $i . '">' . $i . '</a></li>';
+	$list_pages .= '<li class="page-item ' . $active . '"><a class="page-link" href="index.php?page_layout=topic&page=' . $i . '">' . $i . '</a></li>';
 }
 // trang sau
 $page_next = $page + 1;
 if ($page_next > $total_page) {
 	$page_next = $total_page;
 }
-$list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=class&page=' . $page_next . '">&raquo;</a></li>';
+$list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=topic&page=' . $page_next . '">&raquo;</a></li>';
 
 ?>
 <script>
