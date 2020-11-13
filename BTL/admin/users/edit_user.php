@@ -1,5 +1,5 @@
 <?php
-if (!defined("tem") && $_SESSION["user"]["user_lv"] == 2) { ?>
+if (!defined("Tem") || $_SESSION["user"]["user_lv"] == 2) { ?>
 
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
