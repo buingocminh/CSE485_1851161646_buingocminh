@@ -68,11 +68,19 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
         </div>
     </div>
     <!--/.row-->
-    <div id="toolbar" class="btn-group">
-        <a href="add_hoc_vien.html" class="btn btn-success">
+    <div id="toolbar" class="btn-group row">
+        <div class="col-lg-4"> 
+        <a href="add_hoc_vien.html" class="btn btn-success " style="margin-bottom: 5px;">
             <i class="glyphicon glyphicon-plus"></i> Thêm học viên
         </a>
+        </div>
+        
+        <div class="col-lg-8 search_tool ">
+        <input type="text" name="" id="" style="width: 200px;" placeholder="Tìm kiếm theo email"> 
+        <button>Tìm kiếm</button>
     </div>
+    </div>   
+    
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">

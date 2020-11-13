@@ -944,7 +944,13 @@ h1.page-header {
 	overflow: scroll;
 }
 
-
+.search_tool{
+	display: flexbox;
+	width: 500px !important;
+}
+.search_button{
+	margin: 0px;
+}
 
 
 

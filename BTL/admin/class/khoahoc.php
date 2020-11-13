@@ -8,8 +8,8 @@ if (!defined("Tem") || $_SESSION["user"]["user_lv"] == 2) { ?>
 		</div>
 		<!--/.row-->
 	</div>
-<?php die('');
-} ?>
+<?php
+} else{?>
 <?php
 
 if (isset($_GET['page'])) {
@@ -138,7 +138,9 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 	<!--/.row-->
 </div>
 <!--/.main-->
-
+<?php
+}
+?>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-table.js"></script>
