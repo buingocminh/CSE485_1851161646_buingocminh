@@ -76,8 +76,8 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
         </div>
         
         <div class="col-lg-8 search_tool ">
-        <input type="text" name="" id="" style="width: 200px;" placeholder="Tìm kiếm theo email"> 
-        <button>Tìm kiếm</button>
+        <input type="text" name="" id="search_box" style="width: 200px;" placeholder="Tìm kiếm theo email"> 
+        <button id="btn_search">Tìm kiếm</button>
     </div>
     </div>   
     
@@ -91,15 +91,16 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                             <tr>
                                 <th data-field="id" data-sortable="true">ID</th>
                                 <th data-field="name" data-sortable="true">Họ & Tên</th>
+                                <th>Ngày sinh</th>
                                 <th>Số điện thoại</th>
-                                <th data-field="price" data-sortable="true">chương trình</th>
+                                <th>chương trình</th>
                                 <th>địa chỉ</th>
                                 <th>email</th>
                                 <th>trạng thái</th>
                                 <th>Hành động</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="student_list">
                             <?php
                             $sql = "SELECT*FROM students
                                INNER JOIN class ON students.class = class.id
@@ -110,6 +111,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                                 <tr>
                                     <td style=""><?php echo $row[0] ?></td>
                                     <td style=""><?php echo $row[1] ?></td>
+                                    <td><?php echo $row[2]?></td>
                                     <td><?php echo $row["phone_number"] ?></td>
                                     <td style=""><?php echo $row["name"] ?></td>
                                     <td><?php echo $row['addres'] ?></td>
@@ -141,3 +143,4 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-table.js"></script>
+<script src="js/script.js"></script>
