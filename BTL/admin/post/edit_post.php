@@ -23,6 +23,7 @@ if (isset($_POST['sbm'])) {
     $about = $_POST['about'];
     $content = $_POST['content'];
     $topic= $_POST['topic'];
+    $status=$_POST['status'];
     $sql = "SELECT*FROM post WHERE title = '$title' AND title != '$check' ";
     $query = mysqli_query($conn, $sql);
     $num_row = mysqli_num_rows($query);
@@ -44,6 +45,7 @@ if (isset($_POST['sbm'])) {
             content='$content', 
             image='$class_image', 
             topic_id= $topic,
+            status=$status,
             update_at=NOW()
           WHERE id = '$user_id'";
 
@@ -90,7 +92,13 @@ if (isset($_POST['sbm'])) {
                                 <label>Tên bài viết</label>
                                 <input type="text" name="title" required class="form-control" value="<?php echo $row['title'] ?>" placeholder="">
                                 </div>
-
+                                <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select name="status" id="">
+                                <option value="0" <?php if ($row['status']==0) echo 'selected' ?>>Đăng</option>
+                                <option value="1"<?php if ($row['status']==1) echo 'selected' ?> >Chưa đăng</option>
+                                </select>
+                                </div>
                                 <div class="form-group">
                                 <label>Giới thiệu</label>
                                 <textarea name="about" id="about" cols="70" rows="5"><?php echo $row['short_description'] ?></textarea>
@@ -130,7 +138,7 @@ if (isset($_POST['sbm'])) {
                                     CKEDITOR.replace('content');
                                 </script>
                         </div>
-                        <button type="submit" name="sbm" class="btn btn-primary">thêm mới</button>
+                        <button type="submit" name="sbm" class="btn btn-primary">Lưu lại</button>
                         <button type="reset" class="btn btn-default">Làm mới</button>
                         </form>
                     </div>

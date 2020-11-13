@@ -147,6 +147,25 @@
                                     đ� ...</div>
                             </div>
                         </li>
+                        <?php 
+                            $sql="SELECT id from topic WHERE  name='bản tin'";
+                            $row=mysqli_fetch_assoc(mysqli_query($conn,$sql));
+                            $topic_id=$row['id'];
+                            $sql="SELECT * FROM post WHERE topic_id=$topic_id AND status=0 LIMIT 2";
+                            $result=mysqli_query($conn,$sql);
+                            While($row=mysqli_fetch_assoc($result)){
+                        ?>
+                        <li>
+                            <figure><a href="file/ban_tin.php?id=<?php echo $row['id'] ?>"><img src="admin/img/<?php echo $row['image'] ?>"></a></figure>
+                            <div class="post-content">
+                                <h3 class="entry-title"><a href="file/ban_tin.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?></a></h3>
+                                <div class="below-entry"><span><i class="fa fa-clock-o" aria-hidden="true"> <?php echo $row['update_at'] ?></i></span> </div>
+                                <div class="script-post"><?php echo $row['short_description'] ?></div>
+                            </div>
+                        </li>
+                        <?php
+                            }
+                        ?>
                     </ul>
                 </div>
 

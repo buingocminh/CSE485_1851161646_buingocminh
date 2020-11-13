@@ -30,7 +30,7 @@ $page_perv = $page - 1;
 if ($page_perv < 1) {
     $page_perv = 1;
 }
-$list_pages .=  '<li class="page-item"><a class="page-link" href="index.php?page_layout=user&page=' . $page_perv . '">&laquo;</a></li>';
+$list_pages .=  '<li class="page-item"><a class="page-link" href="index.php?page_layout=post&page=' . $page_perv . '">&laquo;</a></li>';
 
 for ($i = 1; $i <= $total_page; $i++) {
     if ($i == $page) {
@@ -38,19 +38,19 @@ for ($i = 1; $i <= $total_page; $i++) {
     } else {
         $active = '';
     }
-    $list_pages .= '<li class="page-item ' . $active . '"><a class="page-link" href="index.php?page_layout=user&page=' . $i . '">' . $i . '</a></li>';
+    $list_pages .= '<li class="page-item ' . $active . '"><a class="page-link" href="index.php?page_layout=post&page=' . $i . '">' . $i . '</a></li>';
 }
 // trang sau
 $page_next = $page + 1;
 if ($page_next > $total_page) {
     $page_next = $total_page;
 }
-$list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=user&page=' . $page_next . '">&raquo;</a></li>';
+$list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=post&page=' . $page_next . '">&raquo;</a></li>';
 
 ?>
 <script>
     function delItem(name) {
-        return confirm('co chac muon xoa');
+        return confirm('Bạn có chắc muốn xoá bài đăng: '+name+" ?");
     }
 </script>
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
@@ -84,7 +84,8 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                                     <th>Tên bài đăng</th>
                                     <th>Ảnh</th>
 									<th>Giới thiệu</th>
-									<th>Người viết</th>
+                                    <th>Người viết</th>
+                                    <th>Trạng thái</th>
 									<th>Hành động</th>
 								</tr>
 							</thead>
@@ -110,11 +111,13 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                             $name=mysqli_fetch_assoc($res);
                             print_r($name['name']);
                             ?></td>
+                            <td>
+                                <?php if($row['status']==0) echo 'Đã đăng'; else echo'Chưa đăng' ?>
+                            </td>
                             <td class="form-group">
                                 <a href="index.php?page_layout=edit_post&id=<?php echo $row['id']?>" class="btn btn-primary"><i
                                         class="glyphicon glyphicon-pencil"></i></a>
-                                <a href="post/delete_post.php?id=<?php echo $row['id'] ?>" class="btn btn-danger"><i
-                                        class="glyphicon glyphicon-remove"></i></a>
+                                <a onclick="return delItem('<?php echo $row['title']?>')" href="post/delete_post.php?id=<?php echo $row['id'] ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                             </td>
                         </tr>
                                 <?php } ?>

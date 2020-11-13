@@ -104,15 +104,14 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                                     <td style=""><?php echo $row[1] ?></td>
                                     <td><?php echo $row["phone_number"] ?></td>
                                     <td style=""><?php echo $row["name"] ?></td>
-                                    <td>Từ 18h-20h, Thứ 2,4,6</td>
-                                    <td>Từ 18h-20h, Thứ 2,4,6</td>
-                                    <td>Từ 18h-20h, Thứ 2,4,6</td>
+                                    <td><?php echo $row['addres'] ?></td>
+                                    <td><?php echo $row['email'] ?></td>
+                                    <td><?php if ($row[8]==1 ) echo 'Đã xác minh'; else echo 'Chưa xác minh'?></td>
                                     <td class="form-group">
-                                        <a href="edit_hoc_vien.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="/" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                        <a href="student/delete_hocvien.php?id=<?php echo $row[0] ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                                     </td>
                                 </tr>
-                            <?php } ?>
+                            <?php }  ?>
                         </tbody>
                     </table>
                 </div>

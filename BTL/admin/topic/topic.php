@@ -49,7 +49,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 
 ?>
 <script>
-	function delItem(name) {
+	function delItem() {
 		return confirm('bạn có chắc muốn xóa mục này?');
 	}
 </script>
@@ -103,7 +103,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 									<td class="form-group">
                                         <a href="index.php?page_layout=view_topic&id=<?php echo $row['id']?>"><i class="fa fa-eye " aria-hidden="true"></i></a>
 										<a href="index.php?page_layout=edit_topic&id=<?php echo $row['id'] ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-										<a href="topic/delete_topic.php?id=<?php echo $row['id']?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+										<a onclick="return delItem()"  href="topic/delete_topic.php?id=<?php echo $row['id']?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
 									</td>
 								</tr>
 							<?php } ?>

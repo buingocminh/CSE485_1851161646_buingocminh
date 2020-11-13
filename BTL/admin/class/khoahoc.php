@@ -86,6 +86,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 								<th>ngày bắt đầu</th>
 								<th>ngày kết thúc</th>
 								<th>lịch học</th>
+								<th>Trạng thái</th>
 								<th>Hành động</th>
 							</tr>
 						</thead>
@@ -114,6 +115,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 												echo "Từ 7h-9h, Thứ 3,5,7";
 												break;
 										} ?></td>
+									<td><?php if($row['status']==0) echo 'Công khai'; else echo'Chưa công khai' ?></td>
 									<td class="form-group">
 										<a href="index.php?page_layout=edit_class&id=<?php echo $row['id'] ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
 										<a onclick="return delItem('<?php echo $row['name']; ?> ')" href="class\delete_khoahoc.php?id=<?php echo $row['id']; ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>

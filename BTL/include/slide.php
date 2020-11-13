@@ -48,14 +48,14 @@
                             </div>
                         </div>
                         <?php
-                            $sql="SELECT * FROM class ORDER BY id ";
+                            $sql="SELECT * FROM class WHERE status=0 ORDER BY id ";
                             $result=mysqli_query($conn,$sql);
                             While($row=mysqli_fetch_assoc($result)){
                         ?>
                          <div class="item">
                             <div class="slide-image">
                                 <img src="admin/img/<?php echo $row['picture']?>" alt="">
-                                <a href="html/Khoa-dao-tao/bang-lai-xe-romoc-hang-f-9.html"><?php echo $row['name'] ?></a>
+                                <a href="file/Khoa-dao-tao/khoa_dao_tao.php?id=<?php echo $row['id'] ?>"><?php echo $row['name'] ?></a>
                             </div>
                         </div>
                         <?php

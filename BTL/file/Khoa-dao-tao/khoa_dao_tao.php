@@ -93,7 +93,7 @@
                                     class="title">Bằng lái xe mô tô hạng A2</span></a></div>
 
                         <?php 
-                            $sql="SELECT * FROM class ORDER BY id";
+                            $sql="SELECT * FROM class WHERE status=0 ORDER BY id";
                             $result=mysqli_query($conn,$sql);
                             While($row=mysqli_fetch_assoc($result)){
                         ?>

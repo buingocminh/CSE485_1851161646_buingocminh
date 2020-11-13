@@ -86,7 +86,7 @@
 				case 'edit_user':include_once('users/edit_user.php'); break;
 				case 'change_pass':include_once('users/change_pass.php'); break;
 				//students
-				case 'students':include_once('sudent/hoc_vien.php'); break;
+				case 'students':include_once('student/hoc_vien.php'); break;
 				case 'edit_students':include_once('edit_student/hoc_vien.php'); break;
 				//class
 				case 'class':include_once('class/khoahoc.php');break;

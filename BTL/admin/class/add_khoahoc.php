@@ -17,7 +17,7 @@ if (isset($_POST['sbm'])) {
     $end = $_POST['end'];
     $schedule = $_POST['schedule'];
     $about = $_POST['about'];
-
+    $status=$_POST['status'];
     // anh
 
     //kiểm tra tên khóa học tồn tại hay ko 
@@ -36,14 +36,16 @@ if (isset($_POST['sbm'])) {
         about,
         start,
         end,
-        schedule
+        schedule,
+        status
         )
     VALUES('$name',
     '$class_image',
     '$about',
     '$start',
     '$end',
-    '$schedule')";
+    '$schedule',
+    $status)";
         mysqli_query($conn, $sql);
         header("location:index.php?page_layout=class");
     }
@@ -82,7 +84,13 @@ if (isset($_POST['sbm'])) {
                                     <label>Tên khóa học</label>
                                     <input type="text" name="name" required class="form-control" placeholder="">
                                 </div>
-
+                                <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select name="status" id="">
+                                <option value="0" >Công khai</option>
+                                <option value="1" selected >Chưa công khai</option>
+                                </select>
+                                </div>
                                 <div class="form-group">
                                     <label>ngày bắt đầu</label>
                                     <input type="date" name="start" required class="form-control">

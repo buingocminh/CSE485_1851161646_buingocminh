@@ -25,6 +25,7 @@ if (isset($_GET["id"])) {
         $end = $_POST['end'];
         $schedule = $_POST['schedule'];
         $about = $_POST['about'];
+        $status=$_POST['status'];
         // anh
         $sql = "SELECT*FROM class WHERE name = '$name' AND name != '$check'";
         $query = mysqli_query($conn, $sql);
@@ -46,6 +47,7 @@ if (isset($_GET["id"])) {
                 start = '$start',
                 end = '$end',
                 schedule = '$schedule',
+                status=$status,
                 update_at=now()
                 WHERE id = $class_id ";
 
@@ -88,7 +90,13 @@ if (isset($_GET["id"])) {
                                 <label>Tên khóa học</label>
                                 <input type="text" name="name" required class="form-control" placeholder="" value="<?php echo $row['name'] ?>">
                             </div>
-
+                            <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select name="status" id="">
+                                <option value="0" <?php if ($row['status']==0) echo 'selected' ?>>Công khai</option>
+                                <option value="1"<?php if ($row['status']==1) echo 'selected' ?> >Chưa công khai</option>
+                                </select>
+                                </div>
                             <div class="form-group">
                                 <label>ngày bắt đầu</label>
                                 <input type="date" name="start" required class="form-control" value="<?php echo $row['start'] ?>">

@@ -14,7 +14,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
                         <ul class=" navbar-nav menu">
-                            <li class="nav-item"><a href="." class="active"><i class="fas fa-home"></i></a></li>
+                            <li class="nav-item"><a href="http://localhost/CSE485_1851161646_buingocminh/BTL/" class="active"><i class="fas fa-home"></i></a></li>
                             <li class="nav-item dropdown">
                                 <a class=" dropdown-toggle nav_content" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VỀ CHÚNG TÔI
@@ -36,9 +36,8 @@
                                     TÀI LIỆU ÔN THI
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="tai-lieu-on-thi/tai-lieu-ly-thuyet-1/">TÀI LIỆU LÝ THUYẾT</a>
-                                    <a href="tai-lieu-on-thi/tai-lieu-thuc-hanh-2/">TÀI LIỆU THỰC HÀNH</a>
-                                    <a href="tai-lieu-on-thi/pham-mem-thi-4/">PHẦN MỀM THI</a>
+                                    <a href="http://localhost/CSE485_1851161646_buingocminh/BTL/file/tai_lieu_on_thi.php">TÀI LIỆU ÔN</a>
+                                    <a href="#">PHẦN MỀM THI</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -47,7 +46,7 @@
                                 BẢN TIN
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="ban-tin/ban-tin-thong-nhat-1/">Bản TIN THỐNG NHẤT</a>
+                                    <a href="http://localhost/CSE485_1851161646_buingocminh/BTL/file/ban_tin.php">BẢN TIN THỐNG NHẤT</a>
                                     <a href="ban-tin/kinh-nghiem-lai-xe-2/">KINH NGHIỆM LÁI XE</a>
                                     <a href="ban-tin/the-gioi-o-to-4/">THẾ GIỚI Ô TÔ</a>
                                     <a href="ban-tin/ban-tin-tong-hop-6/">BẢN TIN TỔNG HỢP</a>

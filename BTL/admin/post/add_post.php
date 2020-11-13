@@ -20,6 +20,7 @@ if (isset($_POST['sbm'])) {
     $about = $_POST['about'];
     $content = $_POST['content'];
     $topic=$_POST['topic'];
+    $status=$_POST['status'];
     $sql = "SELECT*FROM post WHERE title = '$title' ";
     $query = mysqli_query($conn, $sql);
     $num_row = mysqli_num_rows($query);
@@ -30,8 +31,8 @@ if (isset($_POST['sbm'])) {
         $class_image = $_FILES['image']['name'];
         $tmp_name  = $_FILES['image']['tmp_name'];
         move_uploaded_file($tmp_name, "img/".$class_image);
-            $sql = "INSERT INTO post (title, image, short_description,content,writer_id,topic_id)
-            VALUES ('$title', '$class_image','$about', '$about',$user_id,$topic)";
+            $sql = "INSERT INTO post (title, image, short_description,content,writer_id,topic_id,status)
+            VALUES ('$title', '$class_image','$about', '$about',$user_id,$topic,$status)";
            
             mysqli_query($conn, $sql);
             header("location: index.php?page_layout=post");
@@ -76,7 +77,13 @@ if (isset($_POST['sbm'])) {
                                 <label>Tên bài viết</label>
                                 <input type="text" name="title" required class="form-control" value="" placeholder="">
                                 </div>
-
+                                <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select name="status" id="">
+                                <option value="0">Đăng</option>
+                                <option value="1" selected >Chưa đăng</option>
+                                </select>
+                                </div>
                                 <div class="form-group">
                                 <label>Giới thiệu</label>
                                 <textarea name="about" id="about" cols="70" rows="5"></textarea>
@@ -116,7 +123,7 @@ if (isset($_POST['sbm'])) {
                                     CKEDITOR.replace('content');
                                 </script>
                         </div>
-                        <button type="submit" name="sbm" class="btn btn-primary">thêm mới</button>
+                        <button type="submit" name="sbm" class="btn btn-primary">Thêm mới</button>
                         <button type="reset" class="btn btn-default">Làm mới</button>
                         </form>
                     </div>
