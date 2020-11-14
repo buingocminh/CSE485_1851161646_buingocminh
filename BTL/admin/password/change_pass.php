@@ -16,9 +16,11 @@
         $user_pass = $_POST['user_pass'];
         $user_re_pass = $_POST['user_re_pass'];
         if($user_pass != $user_re_pass){
+
             $error = '<div class="alert alert-danger">Mat khau khong khop !</div>';
         }else{
-            $sql_update = "UPDATE users SET password = '$user_pass'
+            $hashed_passcode = password_hash($user_pass, PASSWORD_DEFAULT);
+            $sql_update = "UPDATE users SET password = '$hashed_passcode'
               WHERE email = '$user_mail'";
             mysqli_query($conn,$sql_update);
             header('location: reset.php?pass=change_succes');
